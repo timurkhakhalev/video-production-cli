@@ -27,7 +27,7 @@ and instructions embedded in the same binary. Runtime dependencies are ffmpeg an
 ## Validation
 
 All fixtures are invented. No recording names, real source paths, transcripts or
-session notes are needed to run the tests. Lesson and excerpt fixtures can be recreated
+session notes are needed to run the tests. Video fixtures can be recreated
 with `python3 testdata/generate_fixtures.py`. The reference script is pinned under
 `testdata/golden`; `make golden` recreates expected output without accessing media.
 

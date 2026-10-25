@@ -43,7 +43,7 @@ func NewRoot(version string, out, errOut io.Writer) *cobra.Command {
 	root := &cobra.Command{
 		Use:   "video-production-cli",
 		Short: "Frame-accurate video editing driven by edit.json, built for agents",
-		Long: `video-production-cli cuts screencasts, lessons and shorts from one edit.json.
+		Long: `video-production-cli cuts videos from one edit.json.
 
 Agents: run ` + "`video-production-cli skills get core`" + ` before editing.`,
 		Version: version,

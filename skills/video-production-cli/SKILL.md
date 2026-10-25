@@ -1,6 +1,6 @@
 ---
 name: video-production-cli
-description: Cut and review screencast lessons, tutorials and shorts from source videos using video-production-cli. Use for video trimming, false starts, pauses, requested time-lapses and verified final renders; not for effects, transcription or general media conversion.
+description: Cut and review videos using video-production-cli. Use for video trimming, false starts, pauses, requested time-lapses and verified final renders; not for effects, transcription or general media conversion.
 ---
 
 # Video production CLI

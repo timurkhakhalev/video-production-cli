@@ -15,7 +15,7 @@ Everything outside `keep` is removed automatically; never add redundant outside 
 Chunks tile each keep fragment without gaps within that fragment. Large fragments can have
 several chunks, but one chunk cannot span the gap between fragments.
 
-Internal `cuts` and `speedups` work as for lessons and must fit inside keep fragments and chunks.
+Internal `cuts` and `speedups` work as for other videos and must fit inside keep fragments and chunks.
 To shorten a selected outer edge, trim keep and its chunk boundary together. Use `status`,
 `joins`, `frames --join K` and `listen --join K` to check internal and between-fragment joins.
 Review and approval still apply; keep mode does not imply approval or bypass final verification.

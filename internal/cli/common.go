@@ -16,7 +16,7 @@ import (
 )
 
 // splitEditArg pulls a positional *.json argument out of args (old render.py syntax:
-// `joins lesson-edit/edit.json --chunk 2`).
+// `joins video-edit/edit.json --chunk 2`).
 func splitEditArg(args []string) (string, []string) {
 	var rest []string
 	found := ""

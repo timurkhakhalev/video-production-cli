@@ -76,12 +76,12 @@ func newInitCmd() *cobra.Command {
 		Use:   "init <source> [source2 ...] [--keep FROM-TO ...]",
 		Short: "Create <name>-edit/ with edit.json and encode.json; several parts are joined losslessly first",
 		Long: `Creates the work folder next to the source. Several files of one recording are joined
-without re-encoding first (lesson-1.mp4 lesson-2.mp4 -> lesson.mp4).
+without re-encoding first (video-1.mp4 video-2.mp4 -> video.mp4).
 
 --keep FROM-TO (repeatable) starts keep mode for a short cut from a long recording:
 only these fragments stay, chunks are built per fragment.`,
-		Example: `  video-production-cli init /path/lesson.mp4
-  video-production-cli init /path/lesson-1.mp4 /path/lesson-2.mp4
+		Example: `  video-production-cli init /path/video.mp4
+  video-production-cli init /path/video-1.mp4 /path/video-2.mp4
   video-production-cli init talk.mp4 --keep 35:15.7-36:20.8 --keep 42:50.8-42:57.9`,
 		Args: cobra.MinimumNArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {

@@ -1,6 +1,6 @@
 # video-production-cli
 
-Go CLI for editing screencasts, lessons and shorts from `edit.json`, with instructions
+Go CLI for editing videos from `edit.json`, with instructions
 bundled into the binary for AI agents. Requires Go (see go.mod) to build and ffmpeg/ffprobe 7+
 to run. Final rendering supports H264 video with AAC audio.
 
@@ -8,8 +8,8 @@ to run. Final rendering supports H264 video with AAC audio.
 make build
 bin/video-production-cli doctor
 bin/video-production-cli skills get core --full
-bin/video-production-cli init /path/to/lesson.mp4
-cd /path/to/lesson-edit
+bin/video-production-cli init /path/to/video.mp4
+cd /path/to/video-edit
 /path/to/video-production-cli/bin/video-production-cli status
 ```
 
@@ -31,7 +31,7 @@ make vet
 ```
 
 All test fixtures are invented; no personal recording metadata or media is included.
-`python3 testdata/generate_fixtures.py` recreates the synthetic lesson/short fixtures.
+`python3 testdata/generate_fixtures.py` recreates the synthetic video fixtures.
 `make golden` regenerates reference outputs with Python 3.9+ (only a test dependency).
 
 `make install` installs the binary into ~/.local/bin. `video-production-cli skills install`

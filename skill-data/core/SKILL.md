@@ -1,6 +1,6 @@
 ---
 name: core
-description: Edit screencast lessons and shorts with the CLI, from source inspection through review and verified final render.
+description: Edit videos with the CLI, from source inspection through review and verified final render.
 ---
 
 # Video editing
@@ -26,12 +26,12 @@ To resume, read edit.json and run `status`; start with the first unapproved chun
 
 ## Workflow
 
-1. Run `doctor`, then `init /path/lesson.mp4`. Pass recording parts in order to join losslessly:
-   `init lesson-1.mp4 lesson-2.mp4`. Never join them yourself. Init rejects VFR, nonzero stream
+1. Run `doctor`, then `init /path/video.mp4`. Pass recording parts in order to join losslessly:
+   `init video-1.mp4 video-2.mp4`. Never join them yourself. Init rejects VFR, nonzero stream
    starts and mismatched recording settings. Report failures to the user.
 2. Establish mode from the request, or ask: `step` reviews each chunk; `full` reviews the whole
    edit once. Set `mode` in edit.json. Do not assume user approval or mark chunks approved yourself.
-3. For long lessons run `chunks suggest`. Move nominal ten-minute boundaries to complete
+3. For long videos run `chunks suggest`. Move nominal ten-minute boundaries to complete
    thoughts or slide changes (roughly 7–13 min is fine). Adjacent chunks share a boundary;
    cuts and speed-ups must stay within one chunk. Keep mode instead tiles selected fragments.
 4. Watch each chunk with `proxy FROM TO`, including 20–30 seconds before it for context.

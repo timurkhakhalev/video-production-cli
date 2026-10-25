@@ -7,7 +7,7 @@ Older files without version load as-is; the first CLI save adds version 1.
 ```json
 {
   "version": 1,
-  "source": "/absolute/path/lesson.mp4",
+  "source": "/absolute/path/video.mp4",
   "mode": "step",
   "markers": ["Удалить"],
   "chunks": [

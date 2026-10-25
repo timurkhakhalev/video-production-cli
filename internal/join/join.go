@@ -1,4 +1,4 @@
-// Package join probes sources into encode.json, joins recordings of one lesson without
+// Package join probes sources into encode.json, joins parts of one video without
 // re-encoding, and creates the work folder (render.py init).
 package join
 
@@ -181,7 +181,7 @@ func commonPrefix(a, b string) string {
 	return string(ra[:i])
 }
 
-// Sources concatenates recordings of one lesson without re-encoding and returns the parts list.
+// Sources concatenates parts of one video without re-encoding and returns the parts list.
 func Sources(sources []string, out string) ([]jsonx.Value, error) {
 	encs := make([]*jsonx.Object, len(sources))
 	for i, p := range sources {

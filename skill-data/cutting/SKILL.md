@@ -1,6 +1,6 @@
 ---
 name: cutting
-description: Choose cuts in speech and screen recordings, and verify every splice without clipped words or visible head jumps.
+description: Choose cuts in videos, and verify every splice without clipped words or visible head jumps.
 ---
 
 ## What to cut
@@ -10,11 +10,11 @@ description: Choose cuts in speech and screen recordings, and verify every splic
 3. **Abandoned phrases**: a started thought that is dropped and never finished («а вот здесь, если, ну…», «и тогда получается, в общем»).
 4. **Filler sounds** (э-э, мм, эм) **when they stand alone in a pause**. If a filler is glued to a word, leave it.
 5. **Coughs, throat clearing, sips of water, adjusting glasses, looking at the phone.** Remove the whole action, from the moment the hand or head starts moving until the author is back in a still, neutral pose.
-6. **Dead air**: the silence and preparation before the first word (including clap markers) and after the last word. Inside the lesson, only pauses **longer than ~3 s with nothing happening on screen**. Shorten these to ~0.7 s; don't remove them entirely.
+6. **Dead air**: the silence and preparation before the first word (including clap markers) and after the last word. Inside the video, only pauses **longer than ~3 s with nothing happening on screen**. Shorten these to ~0.7 s; don't remove them entirely.
 
 ## What not to cut
 
-- **Normal pauses and breaths.** Natural rhythm matters more than tightness. Compressing every pause longer than 1 s makes the lesson feel choppy.
+- **Normal pauses and breaths.** Natural rhythm matters more than tightness. Compressing every pause longer than 1 s makes the video feel choppy.
 - **Benign fillers inside fluent speech.** Small hesitations like «вот», «ну», «как бы» stay unless they form a restart.
 - **Silent screen action.** Clicks, page loads, typing, scrolling, switching tabs: the viewer needs time to see it. Silence during a demo is content, not dead air.
 - **A breath, split in half.** A breath is either kept whole or removed whole.

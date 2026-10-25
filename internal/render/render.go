@@ -75,7 +75,7 @@ type RenderResult struct {
 	Verify verify.Report `json:"verify"`
 }
 
-// FinalPath is where `final` writes the lesson.
+// FinalPath is where `final` writes the video.
 func FinalPath(e *edit.Edit) string {
 	stem := stripExt(filepath.Base(e.Source))
 	return filepath.Join(e.Workdir, stem+"_edit.mp4")
