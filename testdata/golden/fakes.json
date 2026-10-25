@@ -1,0 +1,18 @@
+{
+  "output_size": 1234567,
+  "silencedetect_stderr": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'x.mp4':\n[silencedetect @ 0x600000] silence_start: 0.512\n[silencedetect @ 0x600000] silence_end: 1.1043 | silence_duration: 0.5923\n[silencedetect @ 0x600000] silence_start: 3.25\n[silencedetect @ 0x600000] silence_end: 3.4 | silence_duration: 0.15\n[silencedetect @ 0x600000] silence_start: 7.000021\n[silencedetect @ 0x600000] silence_end: 9.98 | silence_duration: 2.979979\n[silencedetect @ 0x600000] silence_start: 15.5\nsize=N/A time=00:00:20.00 bitrate=N/A speed= 500x\n",
+  "psnr_stderr": "[Parsed_psnr_4 @ 0x600000] PSNR y:51.234567 u:55.1 v:55.2 average:52.345678 min:49.000000 max:60.000000\n",
+  "ffprobe_render": {
+    "streams": [
+      {"index": 0, "codec_name": "h264", "codec_type": "video", "profile": "High", "level": 40,
+       "pix_fmt": "yuv420p", "width": 1920, "height": 1080, "r_frame_rate": "30/1", "avg_frame_rate": "30/1",
+       "time_base": "1/15360", "color_range": "tv", "color_space": "bt709", "color_primaries": "bt709",
+       "color_transfer": "bt709", "start_time": "0.000000", "duration": "61.966667", "nb_frames": "1859",
+       "bit_rate": "2100000"},
+      {"index": 1, "codec_name": "aac", "codec_type": "audio", "profile": "LC", "sample_rate": "44100",
+       "channels": 2, "channel_layout": "stereo", "start_time": "0.000000", "duration": "61.950000",
+       "nb_frames": "2669", "bit_rate": "187000"}
+    ],
+    "format": {"duration": "61.966667"}
+  }
+}

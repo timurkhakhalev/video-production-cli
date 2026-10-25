@@ -1,0 +1,24 @@
+[
+ {
+  "args": [
+   "joins",
+   "--all"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: cut 100.000-130.000 outside source\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "preview",
+   "--all"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: cut 100.000-130.000 outside source\n",
+  "commands": [],
+  "files": {}
+ }
+]

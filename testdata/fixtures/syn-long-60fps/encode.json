@@ -1,0 +1,27 @@
+{
+  "video": {
+    "codec": "h264",
+    "profile": "High",
+    "level": 40,
+    "pix_fmt": "yuv420p",
+    "width": 1280,
+    "height": 720,
+    "fps": "60/1",
+    "time_base": "1/30000",
+    "color_range": "tv",
+    "color_space": "bt709",
+    "color_primaries": "bt709",
+    "color_transfer": "bt709",
+    "source_bit_rate": 2000000
+  },
+  "audio": {
+    "codec": "aac",
+    "profile": "LC",
+    "sample_rate": 48000,
+    "channels": 2,
+    "channel_layout": "stereo",
+    "source_bit_rate": 128000,
+    "bit_rate": 192000
+  },
+  "duration": 3600.0
+}

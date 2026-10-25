@@ -1,0 +1,28 @@
+{
+  "source": "/media/bad.mp4",
+  "mode": "step",
+  "markers": [],
+  "chunks": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 60.0,
+      "status": "draft"
+    },
+    {
+      "id": 2,
+      "start": 60.0,
+      "end": 120.0,
+      "status": "draft"
+    }
+  ],
+  "cuts": [],
+  "speedups": [
+    {
+      "from": 1,
+      "to": 9,
+      "speed": 2.5,
+      "reason": "a"
+    }
+  ]
+}

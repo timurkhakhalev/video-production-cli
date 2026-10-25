@@ -1,0 +1,24 @@
+[
+ {
+  "args": [
+   "joins",
+   "--all"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: cut 59.000-61.000 crosses chunk 1 boundary 60.000; move the boundary\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "preview",
+   "--all"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: cut 59.000-61.000 crosses chunk 1 boundary 60.000; move the boundary\n",
+  "commands": [],
+  "files": {}
+ }
+]

@@ -1,0 +1,24 @@
+[
+ {
+  "args": [
+   "joins",
+   "--all"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: chunk 1: status must be one of ('draft', 'in_review', 'approved')\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "preview",
+   "--all"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: chunk 1: status must be one of ('draft', 'in_review', 'approved')\n",
+  "commands": [],
+  "files": {}
+ }
+]

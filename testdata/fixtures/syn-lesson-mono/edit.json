@@ -1,0 +1,73 @@
+{
+  "source": "/media/synthetic/syn-lesson-mono.mp4",
+  "mode": "step",
+  "markers": [
+    "Delete"
+  ],
+  "chunks": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 540.0,
+      "status": "draft"
+    },
+    {
+      "id": 2,
+      "start": 540.0,
+      "end": 1080.0,
+      "status": "draft"
+    }
+  ],
+  "cuts": [
+    {
+      "from": 5.0,
+      "to": 6.2,
+      "reason": "Synthetic restart 1.1"
+    },
+    {
+      "from": 95.0,
+      "to": 96.3,
+      "reason": "Synthetic restart 1.2"
+    },
+    {
+      "from": 185.0,
+      "to": 186.4,
+      "reason": "Synthetic restart 1.3"
+    },
+    {
+      "from": 275.0,
+      "to": 276.5,
+      "reason": "Synthetic restart 1.4"
+    },
+    {
+      "from": 545.0,
+      "to": 546.2,
+      "reason": "Synthetic restart 2.1"
+    },
+    {
+      "from": 635.0,
+      "to": 636.3,
+      "reason": "Synthetic restart 2.2"
+    },
+    {
+      "from": 725.0,
+      "to": 726.4,
+      "reason": "Synthetic restart 2.3"
+    },
+    {
+      "from": 815.0,
+      "to": 816.5,
+      "reason": "Synthetic restart 2.4"
+    }
+  ],
+  "speedups": [],
+  "review_flags": [
+    {
+      "at": 20.0,
+      "note": "Invented example: leave this pause for review."
+    }
+  ],
+  "lessons": [
+    "Invented preference: preserve pauses during screen actions."
+  ]
+}

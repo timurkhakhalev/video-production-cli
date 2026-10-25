@@ -1,0 +1,14 @@
+{
+  "source": "/media/bad.mp4",
+  "mode": "step",
+  "markers": [],
+  "chunks": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 120.0,
+      "status": "done"
+    }
+  ],
+  "cuts": []
+}

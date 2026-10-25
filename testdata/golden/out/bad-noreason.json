@@ -1,0 +1,24 @@
+[
+ {
+  "args": [
+   "joins",
+   "--all"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: cut 1.000-2.000 has no reason\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "preview",
+   "--all"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: cut 1.000-2.000 has no reason\n",
+  "commands": [],
+  "files": {}
+ }
+]

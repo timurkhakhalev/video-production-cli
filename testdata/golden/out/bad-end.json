@@ -1,0 +1,24 @@
+[
+ {
+  "args": [
+   "joins",
+   "--all"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: last chunk must end at source duration 120.000\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "preview",
+   "--all"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: last chunk must end at source duration 120.000\n",
+  "commands": [],
+  "files": {}
+ }
+]

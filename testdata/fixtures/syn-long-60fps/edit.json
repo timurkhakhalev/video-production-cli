@@ -1,0 +1,406 @@
+{
+  "source": "/media/synthetic/syn-long-60fps.mp4",
+  "mode": "step",
+  "markers": [
+    "Delete"
+  ],
+  "chunks": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 300.0,
+      "status": "draft"
+    },
+    {
+      "id": 2,
+      "start": 300.0,
+      "end": 600.0,
+      "status": "draft"
+    },
+    {
+      "id": 3,
+      "start": 600.0,
+      "end": 900.0,
+      "status": "draft"
+    },
+    {
+      "id": 4,
+      "start": 900.0,
+      "end": 1200.0,
+      "status": "draft"
+    },
+    {
+      "id": 5,
+      "start": 1200.0,
+      "end": 1500.0,
+      "status": "draft"
+    },
+    {
+      "id": 6,
+      "start": 1500.0,
+      "end": 1800.0,
+      "status": "draft"
+    },
+    {
+      "id": 7,
+      "start": 1800.0,
+      "end": 2100.0,
+      "status": "draft"
+    },
+    {
+      "id": 8,
+      "start": 2100.0,
+      "end": 2400.0,
+      "status": "draft"
+    },
+    {
+      "id": 9,
+      "start": 2400.0,
+      "end": 2700.0,
+      "status": "draft"
+    },
+    {
+      "id": 10,
+      "start": 2700.0,
+      "end": 3000.0,
+      "status": "draft"
+    },
+    {
+      "id": 11,
+      "start": 3000.0,
+      "end": 3300.0,
+      "status": "draft"
+    },
+    {
+      "id": 12,
+      "start": 3300.0,
+      "end": 3600.0,
+      "status": "draft"
+    }
+  ],
+  "cuts": [
+    {
+      "from": 5.0,
+      "to": 6.2,
+      "reason": "Synthetic restart 1.1"
+    },
+    {
+      "from": 55.0,
+      "to": 56.3,
+      "reason": "Synthetic restart 1.2"
+    },
+    {
+      "from": 105.0,
+      "to": 106.4,
+      "reason": "Synthetic restart 1.3"
+    },
+    {
+      "from": 155.0,
+      "to": 156.5,
+      "reason": "Synthetic restart 1.4"
+    },
+    {
+      "from": 305.0,
+      "to": 306.2,
+      "reason": "Synthetic restart 2.1"
+    },
+    {
+      "from": 355.0,
+      "to": 356.3,
+      "reason": "Synthetic restart 2.2"
+    },
+    {
+      "from": 405.0,
+      "to": 406.4,
+      "reason": "Synthetic restart 2.3"
+    },
+    {
+      "from": 455.0,
+      "to": 456.5,
+      "reason": "Synthetic restart 2.4"
+    },
+    {
+      "from": 605.0,
+      "to": 606.2,
+      "reason": "Synthetic restart 3.1"
+    },
+    {
+      "from": 655.0,
+      "to": 656.3,
+      "reason": "Synthetic restart 3.2"
+    },
+    {
+      "from": 705.0,
+      "to": 706.4,
+      "reason": "Synthetic restart 3.3"
+    },
+    {
+      "from": 755.0,
+      "to": 756.5,
+      "reason": "Synthetic restart 3.4"
+    },
+    {
+      "from": 905.0,
+      "to": 906.2,
+      "reason": "Synthetic restart 4.1"
+    },
+    {
+      "from": 955.0,
+      "to": 956.3,
+      "reason": "Synthetic restart 4.2"
+    },
+    {
+      "from": 1005.0,
+      "to": 1006.4,
+      "reason": "Synthetic restart 4.3"
+    },
+    {
+      "from": 1055.0,
+      "to": 1056.5,
+      "reason": "Synthetic restart 4.4"
+    },
+    {
+      "from": 1205.0,
+      "to": 1206.2,
+      "reason": "Synthetic restart 5.1"
+    },
+    {
+      "from": 1255.0,
+      "to": 1256.3,
+      "reason": "Synthetic restart 5.2"
+    },
+    {
+      "from": 1305.0,
+      "to": 1306.4,
+      "reason": "Synthetic restart 5.3"
+    },
+    {
+      "from": 1355.0,
+      "to": 1356.5,
+      "reason": "Synthetic restart 5.4"
+    },
+    {
+      "from": 1505.0,
+      "to": 1506.2,
+      "reason": "Synthetic restart 6.1"
+    },
+    {
+      "from": 1555.0,
+      "to": 1556.3,
+      "reason": "Synthetic restart 6.2"
+    },
+    {
+      "from": 1605.0,
+      "to": 1606.4,
+      "reason": "Synthetic restart 6.3"
+    },
+    {
+      "from": 1655.0,
+      "to": 1656.5,
+      "reason": "Synthetic restart 6.4"
+    },
+    {
+      "from": 1805.0,
+      "to": 1806.2,
+      "reason": "Synthetic restart 7.1"
+    },
+    {
+      "from": 1855.0,
+      "to": 1856.3,
+      "reason": "Synthetic restart 7.2"
+    },
+    {
+      "from": 1905.0,
+      "to": 1906.4,
+      "reason": "Synthetic restart 7.3"
+    },
+    {
+      "from": 1955.0,
+      "to": 1956.5,
+      "reason": "Synthetic restart 7.4"
+    },
+    {
+      "from": 2105.0,
+      "to": 2106.2,
+      "reason": "Synthetic restart 8.1"
+    },
+    {
+      "from": 2155.0,
+      "to": 2156.3,
+      "reason": "Synthetic restart 8.2"
+    },
+    {
+      "from": 2205.0,
+      "to": 2206.4,
+      "reason": "Synthetic restart 8.3"
+    },
+    {
+      "from": 2255.0,
+      "to": 2256.5,
+      "reason": "Synthetic restart 8.4"
+    },
+    {
+      "from": 2405.0,
+      "to": 2406.2,
+      "reason": "Synthetic restart 9.1"
+    },
+    {
+      "from": 2455.0,
+      "to": 2456.3,
+      "reason": "Synthetic restart 9.2"
+    },
+    {
+      "from": 2505.0,
+      "to": 2506.4,
+      "reason": "Synthetic restart 9.3"
+    },
+    {
+      "from": 2555.0,
+      "to": 2556.5,
+      "reason": "Synthetic restart 9.4"
+    },
+    {
+      "from": 2705.0,
+      "to": 2706.2,
+      "reason": "Synthetic restart 10.1"
+    },
+    {
+      "from": 2755.0,
+      "to": 2756.3,
+      "reason": "Synthetic restart 10.2"
+    },
+    {
+      "from": 2805.0,
+      "to": 2806.4,
+      "reason": "Synthetic restart 10.3"
+    },
+    {
+      "from": 2855.0,
+      "to": 2856.5,
+      "reason": "Synthetic restart 10.4"
+    },
+    {
+      "from": 3005.0,
+      "to": 3006.2,
+      "reason": "Synthetic restart 11.1"
+    },
+    {
+      "from": 3055.0,
+      "to": 3056.3,
+      "reason": "Synthetic restart 11.2"
+    },
+    {
+      "from": 3105.0,
+      "to": 3106.4,
+      "reason": "Synthetic restart 11.3"
+    },
+    {
+      "from": 3155.0,
+      "to": 3156.5,
+      "reason": "Synthetic restart 11.4"
+    },
+    {
+      "from": 3305.0,
+      "to": 3306.2,
+      "reason": "Synthetic restart 12.1"
+    },
+    {
+      "from": 3355.0,
+      "to": 3356.3,
+      "reason": "Synthetic restart 12.2"
+    },
+    {
+      "from": 3405.0,
+      "to": 3406.4,
+      "reason": "Synthetic restart 12.3"
+    },
+    {
+      "from": 3455.0,
+      "to": 3456.5,
+      "reason": "Synthetic restart 12.4"
+    }
+  ],
+  "speedups": [
+    {
+      "from": 240.0,
+      "to": 270.0,
+      "speed": 2,
+      "reason": "Synthetic wait"
+    },
+    {
+      "from": 540.0,
+      "to": 570.0,
+      "speed": 4,
+      "reason": "Synthetic wait"
+    },
+    {
+      "from": 840.0,
+      "to": 870.0,
+      "speed": 8,
+      "reason": "Synthetic wait"
+    },
+    {
+      "from": 1140.0,
+      "to": 1170.0,
+      "speed": 16,
+      "reason": "Synthetic wait"
+    },
+    {
+      "from": 1440.0,
+      "to": 1470.0,
+      "speed": 2,
+      "reason": "Synthetic wait"
+    },
+    {
+      "from": 1740.0,
+      "to": 1770.0,
+      "speed": 4,
+      "reason": "Synthetic wait"
+    },
+    {
+      "from": 2040.0,
+      "to": 2070.0,
+      "speed": 8,
+      "reason": "Synthetic wait"
+    },
+    {
+      "from": 2340.0,
+      "to": 2370.0,
+      "speed": 16,
+      "reason": "Synthetic wait"
+    },
+    {
+      "from": 2640.0,
+      "to": 2670.0,
+      "speed": 2,
+      "reason": "Synthetic wait"
+    },
+    {
+      "from": 2940.0,
+      "to": 2970.0,
+      "speed": 4,
+      "reason": "Synthetic wait"
+    },
+    {
+      "from": 3240.0,
+      "to": 3270.0,
+      "speed": 8,
+      "reason": "Synthetic wait"
+    },
+    {
+      "from": 3540.0,
+      "to": 3570.0,
+      "speed": 16,
+      "reason": "Synthetic wait"
+    }
+  ],
+  "review_flags": [
+    {
+      "at": 20.0,
+      "note": "Invented example: leave this pause for review."
+    }
+  ],
+  "lessons": [
+    "Invented preference: preserve pauses during screen actions."
+  ]
+}

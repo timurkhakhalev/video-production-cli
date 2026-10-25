@@ -1,0 +1,69 @@
+{
+  "source": "/media/synthetic/syn-short-multirange.mp4",
+  "mode": "full",
+  "markers": [
+    "Delete"
+  ],
+  "chunks": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 300.0,
+      "status": "approved"
+    },
+    {
+      "id": 2,
+      "start": 300.0,
+      "end": 600.0,
+      "status": "approved"
+    },
+    {
+      "id": 3,
+      "start": 600.0,
+      "end": 900.0,
+      "status": "approved"
+    }
+  ],
+  "cuts": [
+    {
+      "from": 0,
+      "to": 100,
+      "reason": "Synthetic removal"
+    },
+    {
+      "from": 110,
+      "to": 112,
+      "reason": "Synthetic removal"
+    },
+    {
+      "from": 140,
+      "to": 300,
+      "reason": "Synthetic removal"
+    },
+    {
+      "from": 300,
+      "to": 600,
+      "reason": "Synthetic removal"
+    },
+    {
+      "from": 600,
+      "to": 650,
+      "reason": "Synthetic removal"
+    },
+    {
+      "from": 670,
+      "to": 900,
+      "reason": "Synthetic removal"
+    }
+  ],
+  "speedups": [],
+  "review_flags": [
+    {
+      "at": 20.0,
+      "note": "Invented example: leave this pause for review."
+    }
+  ],
+  "lessons": [
+    "Invented preference: preserve pauses during screen actions."
+  ]
+}

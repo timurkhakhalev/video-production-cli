@@ -1,0 +1,2443 @@
+[
+ {
+  "args": [
+   "joins",
+   "--all"
+  ],
+  "exit": 0,
+  "stdout": "all: source 25:00.000 -> output 22:43.633, 16 join(s)\n#1   out 0:05.000 | src 0:05.000 -> 0:06.200 | -1.20s | Synthetic restart 1.1\n#2   out 1:06.300 | src 1:07.500 -> 1:08.800 | -1.30s | Synthetic restart 1.2\n#3   out 2:07.500 | src 2:10.000 -> 2:11.400 | -1.40s | Synthetic restart 1.3\n#4   out 3:08.600 | src 3:12.500 -> 3:14.000 | -1.50s | Synthetic restart 1.4\n#5   out 5:55.867 | src 6:20.000 -> 6:21.200 | -1.20s | Synthetic restart 2.1\n#6   out 6:57.167 | src 7:22.500 -> 7:23.800 | -1.30s | Synthetic restart 2.2\n#7   out 7:58.367 | src 8:25.000 -> 8:26.400 | -1.40s | Synthetic restart 2.3\n#8   out 8:59.467 | src 9:27.500 -> 9:29.000 | -1.50s | Synthetic restart 2.4\n#9   out 11:37.367 | src 12:35.000 -> 12:36.200 | -1.20s | Synthetic restart 3.1\n#10  out 12:38.667 | src 13:37.500 -> 13:38.800 | -1.30s | Synthetic restart 3.2\n#11  out 13:39.867 | src 14:40.000 -> 14:41.400 | -1.40s | Synthetic restart 3.3\n#12  out 14:40.967 | src 15:42.500 -> 15:44.000 | -1.50s | Synthetic restart 3.4\n#13  out 17:14.167 | src 18:50.000 -> 18:51.200 | -1.20s | Synthetic restart 4.1\n#14  out 18:15.467 | src 19:52.500 -> 19:53.800 | -1.30s | Synthetic restart 4.2\n#15  out 19:16.667 | src 20:55.000 -> 20:56.400 | -1.40s | Synthetic restart 4.3\n#16  out 20:17.767 | src 21:57.500 -> 21:59.000 | -1.50s | Synthetic restart 4.4\nx2   out 4:54.600 - 5:13.367 | src 5:00.000 - 5:37.500 | 37.5s -> 18.8s, muted | Synthetic wait\nx4   out 10:45.467 - 10:54.867 | src 11:15.000 - 11:52.500 | 37.5s -> 9.4s, muted | Synthetic wait\nx8   out 16:26.967 - 16:31.667 | src 17:30.000 - 18:07.500 | 37.5s -> 4.7s, muted | Synthetic wait\nx16  out 22:03.767 - 22:06.133 | src 23:45.000 - 24:22.500 | 37.5s -> 2.4s, muted | Synthetic wait\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "joins",
+   "--chunk",
+   "1"
+  ],
+  "exit": 0,
+  "stdout": "chunk01: source 6:15.000 -> output 5:50.867, 4 join(s)\n#1   out 0:05.000 | src 0:05.000 -> 0:06.200 | -1.20s | Synthetic restart 1.1\n#2   out 1:06.300 | src 1:07.500 -> 1:08.800 | -1.30s | Synthetic restart 1.2\n#3   out 2:07.500 | src 2:10.000 -> 2:11.400 | -1.40s | Synthetic restart 1.3\n#4   out 3:08.600 | src 3:12.500 -> 3:14.000 | -1.50s | Synthetic restart 1.4\nx2   out 4:54.600 - 5:13.367 | src 5:00.000 - 5:37.500 | 37.5s -> 18.8s, muted | Synthetic wait\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "joins",
+   "--chunk",
+   "2"
+  ],
+  "exit": 0,
+  "stdout": "chunk02: source 6:15.000 -> output 5:41.500, 4 join(s)\n#5   out 0:05.000 | src 6:20.000 -> 6:21.200 | -1.20s | Synthetic restart 2.1\n#6   out 1:06.300 | src 7:22.500 -> 7:23.800 | -1.30s | Synthetic restart 2.2\n#7   out 2:07.500 | src 8:25.000 -> 8:26.400 | -1.40s | Synthetic restart 2.3\n#8   out 3:08.600 | src 9:27.500 -> 9:29.000 | -1.50s | Synthetic restart 2.4\nx4   out 4:54.600 - 5:04.000 | src 11:15.000 - 11:52.500 | 37.5s -> 9.4s, muted | Synthetic wait\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "joins",
+   "--chunk",
+   "3"
+  ],
+  "exit": 0,
+  "stdout": "chunk03: source 6:15.000 -> output 5:36.800, 4 join(s)\n#9   out 0:05.000 | src 12:35.000 -> 12:36.200 | -1.20s | Synthetic restart 3.1\n#10  out 1:06.300 | src 13:37.500 -> 13:38.800 | -1.30s | Synthetic restart 3.2\n#11  out 2:07.500 | src 14:40.000 -> 14:41.400 | -1.40s | Synthetic restart 3.3\n#12  out 3:08.600 | src 15:42.500 -> 15:44.000 | -1.50s | Synthetic restart 3.4\nx8   out 4:54.600 - 4:59.300 | src 17:30.000 - 18:07.500 | 37.5s -> 4.7s, muted | Synthetic wait\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "joins",
+   "--chunk",
+   "4"
+  ],
+  "exit": 0,
+  "stdout": "chunk04: source 6:15.000 -> output 5:34.467, 4 join(s)\n#13  out 0:05.000 | src 18:50.000 -> 18:51.200 | -1.20s | Synthetic restart 4.1\n#14  out 1:06.300 | src 19:52.500 -> 19:53.800 | -1.30s | Synthetic restart 4.2\n#15  out 2:07.500 | src 20:55.000 -> 20:56.400 | -1.40s | Synthetic restart 4.3\n#16  out 3:08.600 | src 21:57.500 -> 21:59.000 | -1.50s | Synthetic restart 4.4\nx16  out 4:54.600 - 4:56.967 | src 23:45.000 - 24:22.500 | 37.5s -> 2.4s, muted | Synthetic wait\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "preview",
+   "--chunk",
+   "1"
+  ],
+  "exit": 1,
+  "stdout": "graph: $WORK/previews/preview_chunk01.graph.txt\nrender: ffmpeg -hide_banner -v error -stats -y -i /media/synthetic/syn-multipart.mp4 -/filter_complex $WORK/previews/preview_chunk01.graph.txt -map [v] -map [a] -fps_mode passthrough -c:v libx264 -preset veryfast -crf 24 -c:a aac -b:a 128k -movflags +faststart $WORK/previews/preview_chunk01.mp4\npreview: $WORK/previews/preview_chunk01.mp4\nverify: FAILED\n  [FAIL] video duration ~= expected: 61.967 vs 350.867\n  [ok] audio ~= video duration: a=61.950 v=61.967\n  [FAIL] frame count: 1859 vs 10526\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-v",
+    "error",
+    "-stats",
+    "-y",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-/filter_complex",
+    "$WORK/previews/preview_chunk01.graph.txt",
+    "-map",
+    "[v]",
+    "-map",
+    "[a]",
+    "-fps_mode",
+    "passthrough",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "24",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "128k",
+    "-movflags",
+    "+faststart",
+    "$WORK/previews/preview_chunk01.mp4"
+   ],
+   [
+    "ffprobe",
+    "-v",
+    "error",
+    "-show_streams",
+    "-show_format",
+    "-of",
+    "json",
+    "$WORK/previews/preview_chunk01.mp4"
+   ]
+  ],
+  "files": {
+   "previews/preview_chunk01.graph.txt": "[0:v:0]trim=start=0.000000:end=5.000000,setpts=PTS-STARTPTS[v0];\n[0:a:0]atrim=start=0.000000:end=5.000000,asetpts=PTS-STARTPTS,afade=t=out:st=4.995000:d=0.0050[a0];\n[0:v:0]trim=start=6.200000:end=67.500000,setpts=PTS-STARTPTS[v1];\n[0:a:0]atrim=start=6.200000:end=67.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.295000:d=0.0050[a1];\n[0:v:0]trim=start=68.800000:end=130.000000,setpts=PTS-STARTPTS[v2];\n[0:a:0]atrim=start=68.800000:end=130.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.195000:d=0.0050[a2];\n[0:v:0]trim=start=131.400000:end=192.500000,setpts=PTS-STARTPTS[v3];\n[0:a:0]atrim=start=131.400000:end=192.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.095000:d=0.0050[a3];\n[0:v:0]trim=start=194.000000:end=300.000000,setpts=PTS-STARTPTS[v4];\n[0:a:0]atrim=start=194.000000:end=300.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=105.995000:d=0.0050[a4];\n[0:v:0]trim=start=300.000000:end=337.500000,setpts=PTS-STARTPTS,select=not(mod(n\\,2)),setpts=N*1/30/TB[v5];\nanullsrc=r=48000:cl=stereo,atrim=end_sample=900800[a5];\n[0:v:0]trim=start=337.500000:end=375.000000,setpts=PTS-STARTPTS[v6];\n[0:a:0]atrim=start=337.500000:end=375.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050[a6];\n[v0][a0][v1][a1][v2][a2][v3][a3][v4][a4][v5][a5][v6][a6]concat=n=7:v=1:a=1[v][a]\n"
+  }
+ },
+ {
+  "args": [
+   "preview",
+   "--chunk",
+   "2"
+  ],
+  "exit": 1,
+  "stdout": "graph: $WORK/previews/preview_chunk02.graph.txt\nrender: ffmpeg -hide_banner -v error -stats -y -i /media/synthetic/syn-multipart.mp4 -/filter_complex $WORK/previews/preview_chunk02.graph.txt -map [v] -map [a] -fps_mode passthrough -c:v libx264 -preset veryfast -crf 24 -c:a aac -b:a 128k -movflags +faststart $WORK/previews/preview_chunk02.mp4\npreview: $WORK/previews/preview_chunk02.mp4\nverify: FAILED\n  [FAIL] video duration ~= expected: 61.967 vs 341.500\n  [ok] audio ~= video duration: a=61.950 v=61.967\n  [FAIL] frame count: 1859 vs 10245\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-v",
+    "error",
+    "-stats",
+    "-y",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-/filter_complex",
+    "$WORK/previews/preview_chunk02.graph.txt",
+    "-map",
+    "[v]",
+    "-map",
+    "[a]",
+    "-fps_mode",
+    "passthrough",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "24",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "128k",
+    "-movflags",
+    "+faststart",
+    "$WORK/previews/preview_chunk02.mp4"
+   ],
+   [
+    "ffprobe",
+    "-v",
+    "error",
+    "-show_streams",
+    "-show_format",
+    "-of",
+    "json",
+    "$WORK/previews/preview_chunk02.mp4"
+   ]
+  ],
+  "files": {
+   "previews/preview_chunk02.graph.txt": "[0:v:0]trim=start=375.000000:end=380.000000,setpts=PTS-STARTPTS[v0];\n[0:a:0]atrim=start=375.000000:end=380.000000,asetpts=PTS-STARTPTS,afade=t=out:st=4.995000:d=0.0050[a0];\n[0:v:0]trim=start=381.200000:end=442.500000,setpts=PTS-STARTPTS[v1];\n[0:a:0]atrim=start=381.200000:end=442.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.295000:d=0.0050[a1];\n[0:v:0]trim=start=443.800000:end=505.000000,setpts=PTS-STARTPTS[v2];\n[0:a:0]atrim=start=443.800000:end=505.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.195000:d=0.0050[a2];\n[0:v:0]trim=start=506.400000:end=567.500000,setpts=PTS-STARTPTS[v3];\n[0:a:0]atrim=start=506.400000:end=567.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.095000:d=0.0050[a3];\n[0:v:0]trim=start=569.000000:end=675.000000,setpts=PTS-STARTPTS[v4];\n[0:a:0]atrim=start=569.000000:end=675.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=105.995000:d=0.0050[a4];\n[0:v:0]trim=start=675.000000:end=712.500000,setpts=PTS-STARTPTS,select=not(mod(n\\,4)),setpts=N*1/30/TB[v5];\nanullsrc=r=48000:cl=stereo,atrim=end_sample=451200[a5];\n[0:v:0]trim=start=712.500000:end=750.000000,setpts=PTS-STARTPTS[v6];\n[0:a:0]atrim=start=712.500000:end=750.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050[a6];\n[v0][a0][v1][a1][v2][a2][v3][a3][v4][a4][v5][a5][v6][a6]concat=n=7:v=1:a=1[v][a]\n"
+  }
+ },
+ {
+  "args": [
+   "preview",
+   "--chunk",
+   "3"
+  ],
+  "exit": 1,
+  "stdout": "graph: $WORK/previews/preview_chunk03.graph.txt\nrender: ffmpeg -hide_banner -v error -stats -y -i /media/synthetic/syn-multipart.mp4 -/filter_complex $WORK/previews/preview_chunk03.graph.txt -map [v] -map [a] -fps_mode passthrough -c:v libx264 -preset veryfast -crf 24 -c:a aac -b:a 128k -movflags +faststart $WORK/previews/preview_chunk03.mp4\npreview: $WORK/previews/preview_chunk03.mp4\nverify: FAILED\n  [FAIL] video duration ~= expected: 61.967 vs 336.800\n  [ok] audio ~= video duration: a=61.950 v=61.967\n  [FAIL] frame count: 1859 vs 10104\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-v",
+    "error",
+    "-stats",
+    "-y",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-/filter_complex",
+    "$WORK/previews/preview_chunk03.graph.txt",
+    "-map",
+    "[v]",
+    "-map",
+    "[a]",
+    "-fps_mode",
+    "passthrough",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "24",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "128k",
+    "-movflags",
+    "+faststart",
+    "$WORK/previews/preview_chunk03.mp4"
+   ],
+   [
+    "ffprobe",
+    "-v",
+    "error",
+    "-show_streams",
+    "-show_format",
+    "-of",
+    "json",
+    "$WORK/previews/preview_chunk03.mp4"
+   ]
+  ],
+  "files": {
+   "previews/preview_chunk03.graph.txt": "[0:v:0]trim=start=750.000000:end=755.000000,setpts=PTS-STARTPTS[v0];\n[0:a:0]atrim=start=750.000000:end=755.000000,asetpts=PTS-STARTPTS,afade=t=out:st=4.995000:d=0.0050[a0];\n[0:v:0]trim=start=756.200000:end=817.500000,setpts=PTS-STARTPTS[v1];\n[0:a:0]atrim=start=756.200000:end=817.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.295000:d=0.0050[a1];\n[0:v:0]trim=start=818.800000:end=880.000000,setpts=PTS-STARTPTS[v2];\n[0:a:0]atrim=start=818.800000:end=880.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.195000:d=0.0050[a2];\n[0:v:0]trim=start=881.400000:end=942.500000,setpts=PTS-STARTPTS[v3];\n[0:a:0]atrim=start=881.400000:end=942.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.095000:d=0.0050[a3];\n[0:v:0]trim=start=944.000000:end=1050.000000,setpts=PTS-STARTPTS[v4];\n[0:a:0]atrim=start=944.000000:end=1050.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=105.995000:d=0.0050[a4];\n[0:v:0]trim=start=1050.000000:end=1087.500000,setpts=PTS-STARTPTS,select=not(mod(n\\,8)),setpts=N*1/30/TB[v5];\nanullsrc=r=48000:cl=stereo,atrim=end_sample=225600[a5];\n[0:v:0]trim=start=1087.500000:end=1125.000000,setpts=PTS-STARTPTS[v6];\n[0:a:0]atrim=start=1087.500000:end=1125.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050[a6];\n[v0][a0][v1][a1][v2][a2][v3][a3][v4][a4][v5][a5][v6][a6]concat=n=7:v=1:a=1[v][a]\n"
+  }
+ },
+ {
+  "args": [
+   "preview",
+   "--chunk",
+   "4"
+  ],
+  "exit": 1,
+  "stdout": "graph: $WORK/previews/preview_chunk04.graph.txt\nrender: ffmpeg -hide_banner -v error -stats -y -i /media/synthetic/syn-multipart.mp4 -/filter_complex $WORK/previews/preview_chunk04.graph.txt -map [v] -map [a] -fps_mode passthrough -c:v libx264 -preset veryfast -crf 24 -c:a aac -b:a 128k -movflags +faststart $WORK/previews/preview_chunk04.mp4\npreview: $WORK/previews/preview_chunk04.mp4\nverify: FAILED\n  [FAIL] video duration ~= expected: 61.967 vs 334.467\n  [ok] audio ~= video duration: a=61.950 v=61.967\n  [FAIL] frame count: 1859 vs 10034\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-v",
+    "error",
+    "-stats",
+    "-y",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-/filter_complex",
+    "$WORK/previews/preview_chunk04.graph.txt",
+    "-map",
+    "[v]",
+    "-map",
+    "[a]",
+    "-fps_mode",
+    "passthrough",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "24",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "128k",
+    "-movflags",
+    "+faststart",
+    "$WORK/previews/preview_chunk04.mp4"
+   ],
+   [
+    "ffprobe",
+    "-v",
+    "error",
+    "-show_streams",
+    "-show_format",
+    "-of",
+    "json",
+    "$WORK/previews/preview_chunk04.mp4"
+   ]
+  ],
+  "files": {
+   "previews/preview_chunk04.graph.txt": "[0:v:0]trim=start=1125.000000:end=1130.000000,setpts=PTS-STARTPTS[v0];\n[0:a:0]atrim=start=1125.000000:end=1130.000000,asetpts=PTS-STARTPTS,afade=t=out:st=4.995000:d=0.0050[a0];\n[0:v:0]trim=start=1131.200000:end=1192.500000,setpts=PTS-STARTPTS[v1];\n[0:a:0]atrim=start=1131.200000:end=1192.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.295000:d=0.0050[a1];\n[0:v:0]trim=start=1193.800000:end=1255.000000,setpts=PTS-STARTPTS[v2];\n[0:a:0]atrim=start=1193.800000:end=1255.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.195000:d=0.0050[a2];\n[0:v:0]trim=start=1256.400000:end=1317.500000,setpts=PTS-STARTPTS[v3];\n[0:a:0]atrim=start=1256.400000:end=1317.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.095000:d=0.0050[a3];\n[0:v:0]trim=start=1319.000000:end=1425.000000,setpts=PTS-STARTPTS[v4];\n[0:a:0]atrim=start=1319.000000:end=1425.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=105.995000:d=0.0050[a4];\n[0:v:0]trim=start=1425.000000:end=1462.500000,setpts=PTS-STARTPTS,select=not(mod(n\\,16)),setpts=N*1/30/TB[v5];\nanullsrc=r=48000:cl=stereo,atrim=end_sample=113600[a5];\n[0:v:0]trim=start=1462.500000:end=1500.000000,setpts=PTS-STARTPTS[v6];\n[0:a:0]atrim=start=1462.500000:end=1500.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050[a6];\n[v0][a0][v1][a1][v2][a2][v3][a3][v4][a4][v5][a5][v6][a6]concat=n=7:v=1:a=1[v][a]\n"
+  }
+ },
+ {
+  "args": [
+   "preview",
+   "--all"
+  ],
+  "exit": 1,
+  "stdout": "graph: $WORK/previews/preview_all.graph.txt\nrender: ffmpeg -hide_banner -v error -stats -y -i /media/synthetic/syn-multipart.mp4 -/filter_complex $WORK/previews/preview_all.graph.txt -map [v] -map [a] -fps_mode passthrough -c:v libx264 -preset veryfast -crf 24 -c:a aac -b:a 128k -movflags +faststart $WORK/previews/preview_all.mp4\npreview: $WORK/previews/preview_all.mp4\nverify: FAILED\n  [FAIL] video duration ~= expected: 61.967 vs 1363.633\n  [ok] audio ~= video duration: a=61.950 v=61.967\n  [FAIL] frame count: 1859 vs 40909\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-v",
+    "error",
+    "-stats",
+    "-y",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-/filter_complex",
+    "$WORK/previews/preview_all.graph.txt",
+    "-map",
+    "[v]",
+    "-map",
+    "[a]",
+    "-fps_mode",
+    "passthrough",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "24",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "128k",
+    "-movflags",
+    "+faststart",
+    "$WORK/previews/preview_all.mp4"
+   ],
+   [
+    "ffprobe",
+    "-v",
+    "error",
+    "-show_streams",
+    "-show_format",
+    "-of",
+    "json",
+    "$WORK/previews/preview_all.mp4"
+   ]
+  ],
+  "files": {
+   "previews/preview_all.graph.txt": "[0:v:0]trim=start=0.000000:end=5.000000,setpts=PTS-STARTPTS[v0];\n[0:a:0]atrim=start=0.000000:end=5.000000,asetpts=PTS-STARTPTS,afade=t=out:st=4.995000:d=0.0050[a0];\n[0:v:0]trim=start=6.200000:end=67.500000,setpts=PTS-STARTPTS[v1];\n[0:a:0]atrim=start=6.200000:end=67.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.295000:d=0.0050[a1];\n[0:v:0]trim=start=68.800000:end=130.000000,setpts=PTS-STARTPTS[v2];\n[0:a:0]atrim=start=68.800000:end=130.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.195000:d=0.0050[a2];\n[0:v:0]trim=start=131.400000:end=192.500000,setpts=PTS-STARTPTS[v3];\n[0:a:0]atrim=start=131.400000:end=192.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.095000:d=0.0050[a3];\n[0:v:0]trim=start=194.000000:end=300.000000,setpts=PTS-STARTPTS[v4];\n[0:a:0]atrim=start=194.000000:end=300.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=105.995000:d=0.0050[a4];\n[0:v:0]trim=start=300.000000:end=337.500000,setpts=PTS-STARTPTS,select=not(mod(n\\,2)),setpts=N*1/30/TB[v5];\nanullsrc=r=48000:cl=stereo,atrim=end_sample=900800[a5];\n[0:v:0]trim=start=337.500000:end=380.000000,setpts=PTS-STARTPTS[v6];\n[0:a:0]atrim=start=337.500000:end=380.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=42.495000:d=0.0050[a6];\n[0:v:0]trim=start=381.200000:end=442.500000,setpts=PTS-STARTPTS[v7];\n[0:a:0]atrim=start=381.200000:end=442.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.295000:d=0.0050[a7];\n[0:v:0]trim=start=443.800000:end=505.000000,setpts=PTS-STARTPTS[v8];\n[0:a:0]atrim=start=443.800000:end=505.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.195000:d=0.0050[a8];\n[0:v:0]trim=start=506.400000:end=567.500000,setpts=PTS-STARTPTS[v9];\n[0:a:0]atrim=start=506.400000:end=567.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.095000:d=0.0050[a9];\n[0:v:0]trim=start=569.000000:end=675.000000,setpts=PTS-STARTPTS[v10];\n[0:a:0]atrim=start=569.000000:end=675.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=105.995000:d=0.0050[a10];\n[0:v:0]trim=start=675.000000:end=712.500000,setpts=PTS-STARTPTS,select=not(mod(n\\,4)),setpts=N*1/30/TB[v11];\nanullsrc=r=48000:cl=stereo,atrim=end_sample=451200[a11];\n[0:v:0]trim=start=712.500000:end=755.000000,setpts=PTS-STARTPTS[v12];\n[0:a:0]atrim=start=712.500000:end=755.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=42.495000:d=0.0050[a12];\n[0:v:0]trim=start=756.200000:end=817.500000,setpts=PTS-STARTPTS[v13];\n[0:a:0]atrim=start=756.200000:end=817.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.295000:d=0.0050[a13];\n[0:v:0]trim=start=818.800000:end=880.000000,setpts=PTS-STARTPTS[v14];\n[0:a:0]atrim=start=818.800000:end=880.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.195000:d=0.0050[a14];\n[0:v:0]trim=start=881.400000:end=942.500000,setpts=PTS-STARTPTS[v15];\n[0:a:0]atrim=start=881.400000:end=942.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.095000:d=0.0050[a15];\n[0:v:0]trim=start=944.000000:end=1050.000000,setpts=PTS-STARTPTS[v16];\n[0:a:0]atrim=start=944.000000:end=1050.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=105.995000:d=0.0050[a16];\n[0:v:0]trim=start=1050.000000:end=1087.500000,setpts=PTS-STARTPTS,select=not(mod(n\\,8)),setpts=N*1/30/TB[v17];\nanullsrc=r=48000:cl=stereo,atrim=end_sample=225600[a17];\n[0:v:0]trim=start=1087.500000:end=1130.000000,setpts=PTS-STARTPTS[v18];\n[0:a:0]atrim=start=1087.500000:end=1130.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=42.495000:d=0.0050[a18];\n[0:v:0]trim=start=1131.200000:end=1192.500000,setpts=PTS-STARTPTS[v19];\n[0:a:0]atrim=start=1131.200000:end=1192.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.295000:d=0.0050[a19];\n[0:v:0]trim=start=1193.800000:end=1255.000000,setpts=PTS-STARTPTS[v20];\n[0:a:0]atrim=start=1193.800000:end=1255.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.195000:d=0.0050[a20];\n[0:v:0]trim=start=1256.400000:end=1317.500000,setpts=PTS-STARTPTS[v21];\n[0:a:0]atrim=start=1256.400000:end=1317.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.095000:d=0.0050[a21];\n[0:v:0]trim=start=1319.000000:end=1425.000000,setpts=PTS-STARTPTS[v22];\n[0:a:0]atrim=start=1319.000000:end=1425.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=105.995000:d=0.0050[a22];\n[0:v:0]trim=start=1425.000000:end=1462.500000,setpts=PTS-STARTPTS,select=not(mod(n\\,16)),setpts=N*1/30/TB[v23];\nanullsrc=r=48000:cl=stereo,atrim=end_sample=113600[a23];\n[0:v:0]trim=start=1462.500000:end=1500.000000,setpts=PTS-STARTPTS[v24];\n[0:a:0]atrim=start=1462.500000:end=1500.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050[a24];\n[v0][a0][v1][a1][v2][a2][v3][a3][v4][a4][v5][a5][v6][a6][v7][a7][v8][a8][v9][a9][v10][a10][v11][a11][v12][a12][v13][a13][v14][a14][v15][a15][v16][a16][v17][a17][v18][a18][v19][a19][v20][a20][v21][a21][v22][a22][v23][a23][v24][a24]concat=n=25:v=1:a=1[v][a]\n"
+  }
+ },
+ {
+  "args": [
+   "final"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: chunks not approved: [1, 2, 3, 4] (use --force only if the user asked to render anyway)\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "final",
+   "--force"
+  ],
+  "exit": 1,
+  "stdout": "graph: $WORK/syn-multipart_edit.graph.txt\nrender: ffmpeg -hide_banner -v error -stats -y -i /media/synthetic/syn-multipart.mp4 -/filter_complex $WORK/syn-multipart_edit.graph.txt -map [v] -map [a] -fps_mode passthrough -c:v libx264 -preset slow -crf 15 -pix_fmt yuv420p -profile:v high -level:v 4.0 -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 -video_track_timescale 30000 -c:a aac -b:a 192000 -ar 48000 -ac 2 -movflags +faststart $WORK/syn-multipart_edit.mp4\nfinal: $WORK/syn-multipart_edit.mp4\nverify: FAILED\n  [FAIL] video duration ~= expected: 61.967 vs 1363.633\n  [ok] audio ~= video duration: a=61.950 v=61.967\n  [FAIL] frame count: 1859 vs 40909\n  [ok] video codec: h264 vs source h264\n  [ok] profile: High vs source High\n  [ok] level: 40 vs source 40\n  [ok] pix_fmt: yuv420p vs source yuv420p\n  [FAIL] size: 1920x1080 vs source 1280x720\n  [ok] fps: 30/1 vs source 30/1\n  [FAIL] time_base: 1/15360 vs source 1/30000\n  [ok] color_range: tv vs source tv\n  [ok] color_space: bt709 vs source bt709\n  [ok] color_primaries: bt709 vs source bt709\n  [ok] color_transfer: bt709 vs source bt709\n  [ok] audio codec: aac vs source aac\n  [FAIL] sample_rate: 44100 vs source 48000\n  [ok] channels: 2 vs source 2\n  [ok] audio bitrate not far below source: 187000 vs source 128000 (requested 192000)\n  [ok] picture matches source (PSNR >= 45 dB): 52.3 dB, worst of first/middle/last kept 1x segments\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-v",
+    "error",
+    "-stats",
+    "-y",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-/filter_complex",
+    "$WORK/syn-multipart_edit.graph.txt",
+    "-map",
+    "[v]",
+    "-map",
+    "[a]",
+    "-fps_mode",
+    "passthrough",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "slow",
+    "-crf",
+    "15",
+    "-pix_fmt",
+    "yuv420p",
+    "-profile:v",
+    "high",
+    "-level:v",
+    "4.0",
+    "-color_range",
+    "tv",
+    "-colorspace",
+    "bt709",
+    "-color_primaries",
+    "bt709",
+    "-color_trc",
+    "bt709",
+    "-video_track_timescale",
+    "30000",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "192000",
+    "-ar",
+    "48000",
+    "-ac",
+    "2",
+    "-movflags",
+    "+faststart",
+    "$WORK/syn-multipart_edit.mp4"
+   ],
+   [
+    "ffprobe",
+    "-v",
+    "error",
+    "-show_streams",
+    "-show_format",
+    "-of",
+    "json",
+    "$WORK/syn-multipart_edit.mp4"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "0.000000",
+    "-i",
+    "$WORK/syn-multipart_edit.mp4",
+    "-ss",
+    "0.033333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:4.933333,setpts=PTS-STARTPTS[x];[1:v]trim=0:4.933333,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "0.033333",
+    "-i",
+    "$WORK/syn-multipart_edit.mp4",
+    "-ss",
+    "0.033333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:4.933333,setpts=PTS-STARTPTS[x];[1:v]trim=0:4.933333,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "0.066667",
+    "-i",
+    "$WORK/syn-multipart_edit.mp4",
+    "-ss",
+    "0.033333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:4.933333,setpts=PTS-STARTPTS[x];[1:v]trim=0:4.933333,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "654.866667",
+    "-i",
+    "$WORK/syn-multipart_edit.mp4",
+    "-ss",
+    "712.533333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:10.000000,setpts=PTS-STARTPTS[x];[1:v]trim=0:10.000000,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "654.900000",
+    "-i",
+    "$WORK/syn-multipart_edit.mp4",
+    "-ss",
+    "712.533333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:10.000000,setpts=PTS-STARTPTS[x];[1:v]trim=0:10.000000,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "654.933333",
+    "-i",
+    "$WORK/syn-multipart_edit.mp4",
+    "-ss",
+    "712.533333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:10.000000,setpts=PTS-STARTPTS[x];[1:v]trim=0:10.000000,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "1326.133333",
+    "-i",
+    "$WORK/syn-multipart_edit.mp4",
+    "-ss",
+    "1462.533333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:10.000000,setpts=PTS-STARTPTS[x];[1:v]trim=0:10.000000,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "1326.166667",
+    "-i",
+    "$WORK/syn-multipart_edit.mp4",
+    "-ss",
+    "1462.533333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:10.000000,setpts=PTS-STARTPTS[x];[1:v]trim=0:10.000000,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "1326.200000",
+    "-i",
+    "$WORK/syn-multipart_edit.mp4",
+    "-ss",
+    "1462.533333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:10.000000,setpts=PTS-STARTPTS[x];[1:v]trim=0:10.000000,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ]
+  ],
+  "files": {
+   "syn-multipart_edit.graph.txt": "[0:v:0]trim=start=0.000000:end=5.000000,setpts=PTS-STARTPTS[v0];\n[0:a:0]atrim=start=0.000000:end=5.000000,asetpts=PTS-STARTPTS,afade=t=out:st=4.995000:d=0.0050[a0];\n[0:v:0]trim=start=6.200000:end=67.500000,setpts=PTS-STARTPTS[v1];\n[0:a:0]atrim=start=6.200000:end=67.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.295000:d=0.0050[a1];\n[0:v:0]trim=start=68.800000:end=130.000000,setpts=PTS-STARTPTS[v2];\n[0:a:0]atrim=start=68.800000:end=130.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.195000:d=0.0050[a2];\n[0:v:0]trim=start=131.400000:end=192.500000,setpts=PTS-STARTPTS[v3];\n[0:a:0]atrim=start=131.400000:end=192.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.095000:d=0.0050[a3];\n[0:v:0]trim=start=194.000000:end=300.000000,setpts=PTS-STARTPTS[v4];\n[0:a:0]atrim=start=194.000000:end=300.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=105.995000:d=0.0050[a4];\n[0:v:0]trim=start=300.000000:end=337.500000,setpts=PTS-STARTPTS,select=not(mod(n\\,2)),setpts=N*1/30/TB[v5];\nanullsrc=r=48000:cl=stereo,atrim=end_sample=900800[a5];\n[0:v:0]trim=start=337.500000:end=380.000000,setpts=PTS-STARTPTS[v6];\n[0:a:0]atrim=start=337.500000:end=380.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=42.495000:d=0.0050[a6];\n[0:v:0]trim=start=381.200000:end=442.500000,setpts=PTS-STARTPTS[v7];\n[0:a:0]atrim=start=381.200000:end=442.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.295000:d=0.0050[a7];\n[0:v:0]trim=start=443.800000:end=505.000000,setpts=PTS-STARTPTS[v8];\n[0:a:0]atrim=start=443.800000:end=505.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.195000:d=0.0050[a8];\n[0:v:0]trim=start=506.400000:end=567.500000,setpts=PTS-STARTPTS[v9];\n[0:a:0]atrim=start=506.400000:end=567.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.095000:d=0.0050[a9];\n[0:v:0]trim=start=569.000000:end=675.000000,setpts=PTS-STARTPTS[v10];\n[0:a:0]atrim=start=569.000000:end=675.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=105.995000:d=0.0050[a10];\n[0:v:0]trim=start=675.000000:end=712.500000,setpts=PTS-STARTPTS,select=not(mod(n\\,4)),setpts=N*1/30/TB[v11];\nanullsrc=r=48000:cl=stereo,atrim=end_sample=451200[a11];\n[0:v:0]trim=start=712.500000:end=755.000000,setpts=PTS-STARTPTS[v12];\n[0:a:0]atrim=start=712.500000:end=755.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=42.495000:d=0.0050[a12];\n[0:v:0]trim=start=756.200000:end=817.500000,setpts=PTS-STARTPTS[v13];\n[0:a:0]atrim=start=756.200000:end=817.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.295000:d=0.0050[a13];\n[0:v:0]trim=start=818.800000:end=880.000000,setpts=PTS-STARTPTS[v14];\n[0:a:0]atrim=start=818.800000:end=880.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.195000:d=0.0050[a14];\n[0:v:0]trim=start=881.400000:end=942.500000,setpts=PTS-STARTPTS[v15];\n[0:a:0]atrim=start=881.400000:end=942.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.095000:d=0.0050[a15];\n[0:v:0]trim=start=944.000000:end=1050.000000,setpts=PTS-STARTPTS[v16];\n[0:a:0]atrim=start=944.000000:end=1050.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=105.995000:d=0.0050[a16];\n[0:v:0]trim=start=1050.000000:end=1087.500000,setpts=PTS-STARTPTS,select=not(mod(n\\,8)),setpts=N*1/30/TB[v17];\nanullsrc=r=48000:cl=stereo,atrim=end_sample=225600[a17];\n[0:v:0]trim=start=1087.500000:end=1130.000000,setpts=PTS-STARTPTS[v18];\n[0:a:0]atrim=start=1087.500000:end=1130.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=42.495000:d=0.0050[a18];\n[0:v:0]trim=start=1131.200000:end=1192.500000,setpts=PTS-STARTPTS[v19];\n[0:a:0]atrim=start=1131.200000:end=1192.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.295000:d=0.0050[a19];\n[0:v:0]trim=start=1193.800000:end=1255.000000,setpts=PTS-STARTPTS[v20];\n[0:a:0]atrim=start=1193.800000:end=1255.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.195000:d=0.0050[a20];\n[0:v:0]trim=start=1256.400000:end=1317.500000,setpts=PTS-STARTPTS[v21];\n[0:a:0]atrim=start=1256.400000:end=1317.500000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=61.095000:d=0.0050[a21];\n[0:v:0]trim=start=1319.000000:end=1425.000000,setpts=PTS-STARTPTS[v22];\n[0:a:0]atrim=start=1319.000000:end=1425.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050,afade=t=out:st=105.995000:d=0.0050[a22];\n[0:v:0]trim=start=1425.000000:end=1462.500000,setpts=PTS-STARTPTS,select=not(mod(n\\,16)),setpts=N*1/30/TB[v23];\nanullsrc=r=48000:cl=stereo,atrim=end_sample=113600[a23];\n[0:v:0]trim=start=1462.500000:end=1500.000000,setpts=PTS-STARTPTS[v24];\n[0:a:0]atrim=start=1462.500000:end=1500.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050[a24];\n[v0][a0][v1][a1][v2][a2][v3][a3][v4][a4][v5][a5][v6][a6][v7][a7][v8][a8][v9][a9][v10][a10][v11][a11][v12][a12][v13][a13][v14][a14][v15][a15][v16][a16][v17][a17][v18][a18][v19][a19][v20][a20][v21][a21][v22][a22][v23][a23][v24][a24]concat=n=25:v=1:a=1[v][a]\n",
+   "syn-multipart_edit.verify.json": "{\n  \"file\": \"$WORK/syn-multipart_edit.mp4\",\n  \"ok\": false,\n  \"checks\": [\n    {\n      \"check\": \"video duration ~= expected\",\n      \"ok\": false,\n      \"detail\": \"61.967 vs 1363.633\"\n    },\n    {\n      \"check\": \"audio ~= video duration\",\n      \"ok\": true,\n      \"detail\": \"a=61.950 v=61.967\"\n    },\n    {\n      \"check\": \"frame count\",\n      \"ok\": false,\n      \"detail\": \"1859 vs 40909\"\n    },\n    {\n      \"check\": \"video codec\",\n      \"ok\": true,\n      \"detail\": \"h264 vs source h264\"\n    },\n    {\n      \"check\": \"profile\",\n      \"ok\": true,\n      \"detail\": \"High vs source High\"\n    },\n    {\n      \"check\": \"level\",\n      \"ok\": true,\n      \"detail\": \"40 vs source 40\"\n    },\n    {\n      \"check\": \"pix_fmt\",\n      \"ok\": true,\n      \"detail\": \"yuv420p vs source yuv420p\"\n    },\n    {\n      \"check\": \"size\",\n      \"ok\": false,\n      \"detail\": \"1920x1080 vs source 1280x720\"\n    },\n    {\n      \"check\": \"fps\",\n      \"ok\": true,\n      \"detail\": \"30/1 vs source 30/1\"\n    },\n    {\n      \"check\": \"time_base\",\n      \"ok\": false,\n      \"detail\": \"1/15360 vs source 1/30000\"\n    },\n    {\n      \"check\": \"color_range\",\n      \"ok\": true,\n      \"detail\": \"tv vs source tv\"\n    },\n    {\n      \"check\": \"color_space\",\n      \"ok\": true,\n      \"detail\": \"bt709 vs source bt709\"\n    },\n    {\n      \"check\": \"color_primaries\",\n      \"ok\": true,\n      \"detail\": \"bt709 vs source bt709\"\n    },\n    {\n      \"check\": \"color_transfer\",\n      \"ok\": true,\n      \"detail\": \"bt709 vs source bt709\"\n    },\n    {\n      \"check\": \"audio codec\",\n      \"ok\": true,\n      \"detail\": \"aac vs source aac\"\n    },\n    {\n      \"check\": \"sample_rate\",\n      \"ok\": false,\n      \"detail\": \"44100 vs source 48000\"\n    },\n    {\n      \"check\": \"channels\",\n      \"ok\": true,\n      \"detail\": \"2 vs source 2\"\n    },\n    {\n      \"check\": \"audio bitrate not far below source\",\n      \"ok\": true,\n      \"detail\": \"187000 vs source 128000 (requested 192000)\"\n    },\n    {\n      \"check\": \"picture matches source (PSNR >= 45 dB)\",\n      \"ok\": true,\n      \"detail\": \"52.3 dB, worst of first/middle/last kept 1x segments\"\n    }\n  ]\n}\n"
+  }
+ },
+ {
+  "args": [
+   "verify",
+   "FILE",
+   "--chunk",
+   "1"
+  ],
+  "exit": 1,
+  "stdout": "verify: FAILED\n  [FAIL] video duration ~= expected: 61.967 vs 350.867\n  [ok] audio ~= video duration: a=61.950 v=61.967\n  [FAIL] frame count: 1859 vs 10526\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffprobe",
+    "-v",
+    "error",
+    "-show_streams",
+    "-show_format",
+    "-of",
+    "json",
+    "$WORK/rendered.mp4"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "verify",
+   "FILE",
+   "--final"
+  ],
+  "exit": 1,
+  "stdout": "verify: FAILED\n  [FAIL] video duration ~= expected: 61.967 vs 1363.633\n  [ok] audio ~= video duration: a=61.950 v=61.967\n  [FAIL] frame count: 1859 vs 40909\n  [ok] video codec: h264 vs source h264\n  [ok] profile: High vs source High\n  [ok] level: 40 vs source 40\n  [ok] pix_fmt: yuv420p vs source yuv420p\n  [FAIL] size: 1920x1080 vs source 1280x720\n  [ok] fps: 30/1 vs source 30/1\n  [FAIL] time_base: 1/15360 vs source 1/30000\n  [ok] color_range: tv vs source tv\n  [ok] color_space: bt709 vs source bt709\n  [ok] color_primaries: bt709 vs source bt709\n  [ok] color_transfer: bt709 vs source bt709\n  [ok] audio codec: aac vs source aac\n  [FAIL] sample_rate: 44100 vs source 48000\n  [ok] channels: 2 vs source 2\n  [ok] audio bitrate not far below source: 187000 vs source 128000 (requested 192000)\n  [ok] picture matches source (PSNR >= 45 dB): 52.3 dB, worst of first/middle/last kept 1x segments\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffprobe",
+    "-v",
+    "error",
+    "-show_streams",
+    "-show_format",
+    "-of",
+    "json",
+    "$WORK/rendered.mp4"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "0.000000",
+    "-i",
+    "$WORK/rendered.mp4",
+    "-ss",
+    "0.033333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:4.933333,setpts=PTS-STARTPTS[x];[1:v]trim=0:4.933333,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "0.033333",
+    "-i",
+    "$WORK/rendered.mp4",
+    "-ss",
+    "0.033333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:4.933333,setpts=PTS-STARTPTS[x];[1:v]trim=0:4.933333,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "0.066667",
+    "-i",
+    "$WORK/rendered.mp4",
+    "-ss",
+    "0.033333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:4.933333,setpts=PTS-STARTPTS[x];[1:v]trim=0:4.933333,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "654.866667",
+    "-i",
+    "$WORK/rendered.mp4",
+    "-ss",
+    "712.533333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:10.000000,setpts=PTS-STARTPTS[x];[1:v]trim=0:10.000000,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "654.900000",
+    "-i",
+    "$WORK/rendered.mp4",
+    "-ss",
+    "712.533333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:10.000000,setpts=PTS-STARTPTS[x];[1:v]trim=0:10.000000,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "654.933333",
+    "-i",
+    "$WORK/rendered.mp4",
+    "-ss",
+    "712.533333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:10.000000,setpts=PTS-STARTPTS[x];[1:v]trim=0:10.000000,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "1326.133333",
+    "-i",
+    "$WORK/rendered.mp4",
+    "-ss",
+    "1462.533333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:10.000000,setpts=PTS-STARTPTS[x];[1:v]trim=0:10.000000,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "1326.166667",
+    "-i",
+    "$WORK/rendered.mp4",
+    "-ss",
+    "1462.533333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:10.000000,setpts=PTS-STARTPTS[x];[1:v]trim=0:10.000000,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ],
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "1326.200000",
+    "-i",
+    "$WORK/rendered.mp4",
+    "-ss",
+    "1462.533333",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-lavfi",
+    "[0:v]trim=0:10.000000,setpts=PTS-STARTPTS[x];[1:v]trim=0:10.000000,setpts=PTS-STARTPTS[y];[x][y]psnr",
+    "-f",
+    "null",
+    "-"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "0"
+  ],
+  "exit": 0,
+  "stdout": "all 0:00.000 -> source 0:00.000 (0.000)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "1363.633"
+  ],
+  "exit": 0,
+  "stdout": "all 22:43.633 -> source 25:00.000 (1500.000)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "1364.633"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: time 22:44.633 beyond all output length 22:43.633\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "113.636"
+  ],
+  "exit": 0,
+  "stdout": "all 1:53.636 -> source 1:56.136 (116.136)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "227.272"
+  ],
+  "exit": 0,
+  "stdout": "all 3:47.272 -> source 3:52.672 (232.672)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "340.908"
+  ],
+  "exit": 0,
+  "stdout": "all 5:40.908 -> source 6:05.041 (365.041)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "454.544"
+  ],
+  "exit": 0,
+  "stdout": "all 7:34.544 -> source 8:01.177 (481.177)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "568.181"
+  ],
+  "exit": 0,
+  "stdout": "all 9:28.181 -> source 9:57.714 (597.714)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "681.817"
+  ],
+  "exit": 0,
+  "stdout": "all 11:21.817 -> source 12:19.450 (739.450)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "795.453"
+  ],
+  "exit": 0,
+  "stdout": "all 13:15.453 -> source 14:15.586 (855.586)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "909.089"
+  ],
+  "exit": 0,
+  "stdout": "all 15:09.089 -> source 16:12.122 (972.122)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "1022.725"
+  ],
+  "exit": 0,
+  "stdout": "all 17:02.725 -> source 18:38.558 (1118.558)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "1136.361"
+  ],
+  "exit": 0,
+  "stdout": "all 18:56.361 -> source 20:34.694 (1234.694)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "1249.997"
+  ],
+  "exit": 0,
+  "stdout": "all 20:49.997 -> source 22:31.230 (1351.230)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--all",
+   "7:34.5"
+  ],
+  "exit": 0,
+  "stdout": "all 7:34.500 -> source 8:01.133 (481.133)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "0"
+  ],
+  "exit": 0,
+  "stdout": "chunk01 0:00.000 -> source 0:00.000 (0.000)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "350.867"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: time 5:50.867 beyond chunk01 output length 5:50.867\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "351.867"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: time 5:51.867 beyond chunk01 output length 5:50.867\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "29.239"
+  ],
+  "exit": 0,
+  "stdout": "chunk01 0:29.239 -> source 0:30.439 (30.439)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "58.478"
+  ],
+  "exit": 0,
+  "stdout": "chunk01 0:58.478 -> source 0:59.678 (59.678)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "87.717"
+  ],
+  "exit": 0,
+  "stdout": "chunk01 1:27.717 -> source 1:30.217 (90.217)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "116.956"
+  ],
+  "exit": 0,
+  "stdout": "chunk01 1:56.956 -> source 1:59.456 (119.456)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "146.194"
+  ],
+  "exit": 0,
+  "stdout": "chunk01 2:26.194 -> source 2:30.094 (150.094)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "175.433"
+  ],
+  "exit": 0,
+  "stdout": "chunk01 2:55.433 -> source 2:59.333 (179.333)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "204.672"
+  ],
+  "exit": 0,
+  "stdout": "chunk01 3:24.672 -> source 3:30.072 (210.072)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "233.911"
+  ],
+  "exit": 0,
+  "stdout": "chunk01 3:53.911 -> source 3:59.311 (239.311)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "263.150"
+  ],
+  "exit": 0,
+  "stdout": "chunk01 4:23.150 -> source 4:28.550 (268.550)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "292.389"
+  ],
+  "exit": 0,
+  "stdout": "chunk01 4:52.389 -> source 4:57.789 (297.789)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "321.628"
+  ],
+  "exit": 0,
+  "stdout": "chunk01 5:21.628 -> source 5:45.761 (345.761)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "1",
+   "1:56.9"
+  ],
+  "exit": 0,
+  "stdout": "chunk01 1:56.900 -> source 1:59.400 (119.400)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "0"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 0:00.000 -> source 6:15.000 (375.000)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "341.500"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 5:41.500 -> source 12:30.000 (750.000)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "342.500"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: time 5:42.500 beyond chunk02 output length 5:41.500\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "28.458"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 0:28.458 -> source 6:44.658 (404.658)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "56.917"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 0:56.917 -> source 7:13.117 (433.117)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "85.375"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 1:25.375 -> source 7:42.875 (462.875)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "113.833"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 1:53.833 -> source 8:11.333 (491.333)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "142.292"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 2:22.292 -> source 8:41.192 (521.192)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "170.750"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 2:50.750 -> source 9:09.650 (549.650)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "199.208"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 3:19.208 -> source 9:39.608 (579.608)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "227.667"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 3:47.667 -> source 10:08.067 (608.067)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "256.125"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 4:16.125 -> source 10:36.525 (636.525)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "284.583"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 4:44.583 -> source 11:04.983 (664.983)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "313.042"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 5:13.042 -> source 12:01.542 (721.542)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "2",
+   "1:53.8"
+  ],
+  "exit": 0,
+  "stdout": "chunk02 1:53.800 -> source 8:11.300 (491.300)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "0"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 0:00.000 -> source 12:30.000 (750.000)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "336.800"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 5:36.800 -> source 18:45.000 (1125.000)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "337.800"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: time 5:37.800 beyond chunk03 output length 5:36.800\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "28.067"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 0:28.067 -> source 12:59.267 (779.267)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "56.133"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 0:56.133 -> source 13:27.333 (807.333)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "84.200"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 1:24.200 -> source 13:56.700 (836.700)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "112.267"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 1:52.267 -> source 14:24.767 (864.767)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "140.333"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 2:20.333 -> source 14:54.233 (894.233)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "168.400"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 2:48.400 -> source 15:22.300 (922.300)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "196.467"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 3:16.467 -> source 15:51.867 (951.867)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "224.533"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 3:44.533 -> source 16:19.933 (979.933)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "252.600"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 4:12.600 -> source 16:48.000 (1008.000)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "280.667"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 4:40.667 -> source 17:16.067 (1036.067)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "308.733"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 5:08.733 -> source 18:16.933 (1096.933)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "3",
+   "1:52.2"
+  ],
+  "exit": 0,
+  "stdout": "chunk03 1:52.200 -> source 14:24.700 (864.700)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "0"
+  ],
+  "exit": 0,
+  "stdout": "chunk04 0:00.000 -> source 18:45.000 (1125.000)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "334.467"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: time 5:34.467 beyond chunk04 output length 5:34.467\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "335.467"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: time 5:35.467 beyond chunk04 output length 5:34.467\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "27.872"
+  ],
+  "exit": 0,
+  "stdout": "chunk04 0:27.872 -> source 19:14.072 (1154.072)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "55.744"
+  ],
+  "exit": 0,
+  "stdout": "chunk04 0:55.744 -> source 19:41.944 (1181.944)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "83.617"
+  ],
+  "exit": 0,
+  "stdout": "chunk04 1:23.617 -> source 20:11.117 (1211.117)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "111.489"
+  ],
+  "exit": 0,
+  "stdout": "chunk04 1:51.489 -> source 20:38.989 (1238.989)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "139.361"
+  ],
+  "exit": 0,
+  "stdout": "chunk04 2:19.361 -> source 21:08.261 (1268.261)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "167.233"
+  ],
+  "exit": 0,
+  "stdout": "chunk04 2:47.233 -> source 21:36.133 (1296.133)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "195.106"
+  ],
+  "exit": 0,
+  "stdout": "chunk04 3:15.106 -> source 22:05.506 (1325.506)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "222.978"
+  ],
+  "exit": 0,
+  "stdout": "chunk04 3:42.978 -> source 22:33.378 (1353.378)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "250.850"
+  ],
+  "exit": 0,
+  "stdout": "chunk04 4:10.850 -> source 23:01.250 (1381.250)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "278.722"
+  ],
+  "exit": 0,
+  "stdout": "chunk04 4:38.722 -> source 23:29.122 (1409.122)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "306.594"
+  ],
+  "exit": 0,
+  "stdout": "chunk04 5:06.594 -> source 24:32.127 (1472.127)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "map",
+   "--chunk",
+   "4",
+   "1:51.4"
+  ],
+  "exit": 0,
+  "stdout": "chunk04 1:51.400 -> source 20:38.900 (1238.900)\n",
+  "stderr": "",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "frames",
+   "--join",
+   "1"
+  ],
+  "exit": 0,
+  "stdout": "join #1: src 0:05.000 -> 0:06.200 (Synthetic restart 1.1)\nsheet: $WORK/frames/join001_sheet.jpg\n  top row: last 15 frames before the cut (left->right, rightmost is the last kept frame)\n  bottom row: first 15 frames after the cut (leftmost is the first kept frame)\npair:  $WORK/frames/join001_pair.jpg  (left: last frame before, right: first frame after; full resolution)\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-ss",
+    "4.5000",
+    "-t",
+    "0.5000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-ss",
+    "6.2000",
+    "-t",
+    "0.5000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-filter_complex",
+    "[0:v]scale=384:-2,tile=15x1[a];[1:v]scale=384:-2,tile=15x1[b];[a][b]vstack[s]",
+    "-map",
+    "[s]",
+    "-frames:v",
+    "1",
+    "-q:v",
+    "3",
+    "$WORK/frames/join001_sheet.jpg"
+   ],
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-ss",
+    "4.9667",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-ss",
+    "6.2000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-filter_complex",
+    "[0:v]trim=end_frame=1[a];[1:v]trim=end_frame=1[b];[a][b]hstack[s]",
+    "-map",
+    "[s]",
+    "-frames:v",
+    "1",
+    "-q:v",
+    "2",
+    "$WORK/frames/join001_pair.jpg"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "listen",
+   "--join",
+   "1"
+  ],
+  "exit": 0,
+  "stdout": "join #1: src 0:05.000 -> 0:06.200 (Synthetic restart 1.1)\nlisten: $WORK/frames/join001_listen.mp4\n  the join is at 3.00s into the clip; check that no word or breath is clipped on either side\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-filter_complex",
+    "[0:v:0]trim=start=2.000000:end=5.000000,setpts=PTS-STARTPTS[v0];[0:a:0]atrim=start=2.000000:end=5.000000,asetpts=PTS-STARTPTS,afade=t=out:st=2.995000:d=0.0050[a0];[0:v:0]trim=start=6.200000:end=9.200000,setpts=PTS-STARTPTS[v1];[0:a:0]atrim=start=6.200000:end=9.200000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a];[v]scale=-2:540[vs]",
+    "-map",
+    "[vs]",
+    "-map",
+    "[a]",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "28",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "96k",
+    "-movflags",
+    "+faststart",
+    "$WORK/frames/join001_listen.mp4"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "frames",
+   "--join",
+   "8"
+  ],
+  "exit": 0,
+  "stdout": "join #8: src 9:27.500 -> 9:29.000 (Synthetic restart 2.4)\nsheet: $WORK/frames/join008_sheet.jpg\n  top row: last 15 frames before the cut (left->right, rightmost is the last kept frame)\n  bottom row: first 15 frames after the cut (leftmost is the first kept frame)\npair:  $WORK/frames/join008_pair.jpg  (left: last frame before, right: first frame after; full resolution)\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-ss",
+    "567.0000",
+    "-t",
+    "0.5000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-ss",
+    "569.0000",
+    "-t",
+    "0.5000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-filter_complex",
+    "[0:v]scale=384:-2,tile=15x1[a];[1:v]scale=384:-2,tile=15x1[b];[a][b]vstack[s]",
+    "-map",
+    "[s]",
+    "-frames:v",
+    "1",
+    "-q:v",
+    "3",
+    "$WORK/frames/join008_sheet.jpg"
+   ],
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-ss",
+    "567.4667",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-ss",
+    "569.0000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-filter_complex",
+    "[0:v]trim=end_frame=1[a];[1:v]trim=end_frame=1[b];[a][b]hstack[s]",
+    "-map",
+    "[s]",
+    "-frames:v",
+    "1",
+    "-q:v",
+    "2",
+    "$WORK/frames/join008_pair.jpg"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "listen",
+   "--join",
+   "8"
+  ],
+  "exit": 0,
+  "stdout": "join #8: src 9:27.500 -> 9:29.000 (Synthetic restart 2.4)\nlisten: $WORK/frames/join008_listen.mp4\n  the join is at 3.00s into the clip; check that no word or breath is clipped on either side\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-filter_complex",
+    "[0:v:0]trim=start=564.500000:end=567.500000,setpts=PTS-STARTPTS[v0];[0:a:0]atrim=start=564.500000:end=567.500000,asetpts=PTS-STARTPTS,afade=t=out:st=2.995000:d=0.0050[a0];[0:v:0]trim=start=569.000000:end=572.000000,setpts=PTS-STARTPTS[v1];[0:a:0]atrim=start=569.000000:end=572.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a];[v]scale=-2:540[vs]",
+    "-map",
+    "[vs]",
+    "-map",
+    "[a]",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "28",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "96k",
+    "-movflags",
+    "+faststart",
+    "$WORK/frames/join008_listen.mp4"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "frames",
+   "--join",
+   "16"
+  ],
+  "exit": 0,
+  "stdout": "join #16: src 21:57.500 -> 21:59.000 (Synthetic restart 4.4)\nsheet: $WORK/frames/join016_sheet.jpg\n  top row: last 15 frames before the cut (left->right, rightmost is the last kept frame)\n  bottom row: first 15 frames after the cut (leftmost is the first kept frame)\npair:  $WORK/frames/join016_pair.jpg  (left: last frame before, right: first frame after; full resolution)\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-ss",
+    "1317.0000",
+    "-t",
+    "0.5000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-ss",
+    "1319.0000",
+    "-t",
+    "0.5000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-filter_complex",
+    "[0:v]scale=384:-2,tile=15x1[a];[1:v]scale=384:-2,tile=15x1[b];[a][b]vstack[s]",
+    "-map",
+    "[s]",
+    "-frames:v",
+    "1",
+    "-q:v",
+    "3",
+    "$WORK/frames/join016_sheet.jpg"
+   ],
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-ss",
+    "1317.4667",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-ss",
+    "1319.0000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-filter_complex",
+    "[0:v]trim=end_frame=1[a];[1:v]trim=end_frame=1[b];[a][b]hstack[s]",
+    "-map",
+    "[s]",
+    "-frames:v",
+    "1",
+    "-q:v",
+    "2",
+    "$WORK/frames/join016_pair.jpg"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "listen",
+   "--join",
+   "16"
+  ],
+  "exit": 0,
+  "stdout": "join #16: src 21:57.500 -> 21:59.000 (Synthetic restart 4.4)\nlisten: $WORK/frames/join016_listen.mp4\n  the join is at 3.00s into the clip; check that no word or breath is clipped on either side\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-filter_complex",
+    "[0:v:0]trim=start=1314.500000:end=1317.500000,setpts=PTS-STARTPTS[v0];[0:a:0]atrim=start=1314.500000:end=1317.500000,asetpts=PTS-STARTPTS,afade=t=out:st=2.995000:d=0.0050[a0];[0:v:0]trim=start=1319.000000:end=1322.000000,setpts=PTS-STARTPTS[v1];[0:a:0]atrim=start=1319.000000:end=1322.000000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a];[v]scale=-2:540[vs]",
+    "-map",
+    "[vs]",
+    "-map",
+    "[a]",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "28",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "96k",
+    "-movflags",
+    "+faststart",
+    "$WORK/frames/join016_listen.mp4"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "frames",
+   "--join",
+   "17"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: join must be 1..16 (see `joins --all`)\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "listen",
+   "--join",
+   "17"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: join must be 1..16 (see `joins --all`)\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "frames",
+   "--join",
+   "2",
+   "--span",
+   "0.25"
+  ],
+  "exit": 0,
+  "stdout": "join #2: src 1:07.500 -> 1:08.800 (Synthetic restart 1.2)\nsheet: $WORK/frames/join002_sheet.jpg\n  top row: last 8 frames before the cut (left->right, rightmost is the last kept frame)\n  bottom row: first 8 frames after the cut (leftmost is the first kept frame)\npair:  $WORK/frames/join002_pair.jpg  (left: last frame before, right: first frame after; full resolution)\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-ss",
+    "67.2500",
+    "-t",
+    "0.2500",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-ss",
+    "68.8000",
+    "-t",
+    "0.2500",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-filter_complex",
+    "[0:v]scale=384:-2,tile=8x1[a];[1:v]scale=384:-2,tile=8x1[b];[a][b]vstack[s]",
+    "-map",
+    "[s]",
+    "-frames:v",
+    "1",
+    "-q:v",
+    "3",
+    "$WORK/frames/join002_sheet.jpg"
+   ],
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-ss",
+    "67.4667",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-ss",
+    "68.8000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-filter_complex",
+    "[0:v]trim=end_frame=1[a];[1:v]trim=end_frame=1[b];[a][b]hstack[s]",
+    "-map",
+    "[s]",
+    "-frames:v",
+    "1",
+    "-q:v",
+    "2",
+    "$WORK/frames/join002_pair.jpg"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "listen",
+   "--join",
+   "1",
+   "--span",
+   "1.5"
+  ],
+  "exit": 0,
+  "stdout": "join #1: src 0:05.000 -> 0:06.200 (Synthetic restart 1.1)\nlisten: $WORK/frames/join001_listen.mp4\n  the join is at 1.50s into the clip; check that no word or breath is clipped on either side\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-filter_complex",
+    "[0:v:0]trim=start=3.500000:end=5.000000,setpts=PTS-STARTPTS[v0];[0:a:0]atrim=start=3.500000:end=5.000000,asetpts=PTS-STARTPTS,afade=t=out:st=1.495000:d=0.0050[a0];[0:v:0]trim=start=6.200000:end=7.700000,setpts=PTS-STARTPTS[v1];[0:a:0]atrim=start=6.200000:end=7.700000,asetpts=PTS-STARTPTS,afade=t=in:d=0.0050[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a];[v]scale=-2:540[vs]",
+    "-map",
+    "[vs]",
+    "-map",
+    "[a]",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "28",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "96k",
+    "-movflags",
+    "+faststart",
+    "$WORK/frames/join001_listen.mp4"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "frames",
+   "--range",
+   "750.000",
+   "752.000"
+  ],
+  "exit": 0,
+  "stdout": "sheet: $WORK/frames/range_750.000_752.000.jpg\nframes left->right, top->bottom; cell (row r, col c) = source 750.000 + ((r-1)*10 + (c-1)) / 30 s\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-ss",
+    "750.0000",
+    "-t",
+    "2.0000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-vf",
+    "scale=384:-2,tile=10x6",
+    "-frames:v",
+    "1",
+    "-q:v",
+    "3",
+    "$WORK/frames/range_750.000_752.000.jpg"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "frames",
+   "--range",
+   "10",
+   "20"
+  ],
+  "exit": 1,
+  "stdout": "",
+  "stderr": "ERROR: range must cover 1..120 frames (got 300)\n",
+  "commands": [],
+  "files": {}
+ },
+ {
+  "args": [
+   "proxy",
+   "0",
+   "300.000"
+  ],
+  "exit": 0,
+  "stdout": "proxy: $WORK/proxy/proxy_0.000_300.000.mp4\nsource time = 0.000 + time in proxy  (proxy 0:00.000 .. 5:00.000 of source)\nsize: 1.2 MB\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-ss",
+    "0.0000",
+    "-t",
+    "300.0000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-vf",
+    "scale=-2:540",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "28",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "96k",
+    "-movflags",
+    "+faststart",
+    "$WORK/proxy/proxy_0.000_300.000.mp4"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "proxy",
+   "1470.00",
+   "1530.00"
+  ],
+  "exit": 0,
+  "stdout": "proxy: $WORK/proxy/proxy_1470.000_1500.000.mp4\nsource time = 1470.000 + time in proxy  (proxy 24:30.000 .. 25:00.000 of source)\nsize: 1.2 MB\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-y",
+    "-ss",
+    "1470.0000",
+    "-t",
+    "30.0000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-vf",
+    "scale=-2:540",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "28",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "96k",
+    "-movflags",
+    "+faststart",
+    "$WORK/proxy/proxy_1470.000_1500.000.mp4"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "silences",
+   "500.000",
+   "520.000"
+  ],
+  "exit": 0,
+  "stdout": "pauses in source 8:20.000 .. 8:40.000 (noise -32dB, min 0.08s), source seconds:\n  500.512 - 501.104  (0.59s)  8:20.512\n  503.250 - 503.400  (0.15s)  8:23.250\n  507.000 - 509.980  (2.98s)  8:27.000\n  515.500 - 520.000  (open)\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "500.0000",
+    "-t",
+    "20.0000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-map",
+    "0:a:0",
+    "-af",
+    "silencedetect=noise=-32dB:d=0.08",
+    "-f",
+    "null",
+    "-"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "silences",
+   "1",
+   "30",
+   "--noise",
+   "-40",
+   "--min",
+   "0.25"
+  ],
+  "exit": 0,
+  "stdout": "pauses in source 0:01.000 .. 0:30.000 (noise -40dB, min 0.25s), source seconds:\n  1.512 - 2.104  (0.59s)  0:01.512\n  4.250 - 4.400  (0.15s)  0:04.250\n  8.000 - 10.980  (2.98s)  0:08.000\n  16.500 - 30.000  (open)\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-ss",
+    "1.0000",
+    "-t",
+    "29.0000",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-map",
+    "0:a:0",
+    "-af",
+    "silencedetect=noise=-40dB:d=0.25",
+    "-f",
+    "null",
+    "-"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "suggest-chunks"
+  ],
+  "exit": 0,
+  "stdout": "around 10:00.000:\n  no pause >= 0.4s in window\naround 20:00.000:\n  no pause >= 0.4s in window\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-map",
+    "0:a:0",
+    "-af",
+    "silencedetect=noise=-40dB:d=0.4",
+    "-f",
+    "null",
+    "-"
+   ]
+  ],
+  "files": {}
+ },
+ {
+  "args": [
+   "suggest-chunks",
+   "--every",
+   "300",
+   "--window",
+   "60"
+  ],
+  "exit": 0,
+  "stdout": "around 5:00.000:\n  no pause >= 0.4s in window\naround 10:00.000:\n  no pause >= 0.4s in window\naround 15:00.000:\n  no pause >= 0.4s in window\naround 20:00.000:\n  no pause >= 0.4s in window\n",
+  "stderr": "",
+  "commands": [
+   [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-i",
+    "/media/synthetic/syn-multipart.mp4",
+    "-map",
+    "0:a:0",
+    "-af",
+    "silencedetect=noise=-40dB:d=0.4",
+    "-f",
+    "null",
+    "-"
+   ]
+  ],
+  "files": {}
+ }
+]
