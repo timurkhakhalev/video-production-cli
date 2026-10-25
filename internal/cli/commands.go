@@ -19,7 +19,8 @@ import (
 
 func editCommands() []*cobra.Command {
 	return []*cobra.Command{
-		newInitCmd(), newStatusCmd(), newChunksCmd(), newSuggestChunksCmd(),
+		newInitCmd(), newStatusCmd(), newModeCmd(), newChunksCmd(), newSuggestChunksCmd(),
+		newCutsCmd(), newSpeedupsCmd(),
 		newAudioCmd(), newSilencesCmd(), newListenCmd(), newFramesCmd(), newProxyCmd(),
 		newJoinsCmd(), newMapCmd(), newPreviewCmd(), newFinalCmd(), newVerifyCmd(),
 	}
@@ -328,21 +329,26 @@ func newSilencesCmd() *cobra.Command {
 
 func newListenCmd() *cobra.Command {
 	var k int
-	var try string
+	var try, reason string
 	var span float64
-	var video bool
+	var video, apply bool
 	cmd := &cobra.Command{
-		Use:   "listen --join K | --range FROM TO | --try FROM TO",
+		Use:   "listen --join K | --range FROM TO | --try FROM TO [--apply --reason R]",
 		Short: "Write a listening clip (mp3, 16 kHz mono; --video for mp4)",
 		Long: `--join K   the last seconds before join K and the first after it, cut exactly as in the render
---try F T  how a cut F..T would sound, with the other cuts applied, before writing it to edit.json
+--try F T  how a cut F..T would sound, with the other cuts applied, before writing it to edit.json;
+           after you listened to the clip, --apply --reason R saves the cut (same as cuts add)
 --range    a stretch of the source (or of --file) as is
 
 MP3 includes gapless timing metadata. Players that ignore it add about 69 ms; see output.`,
 		Example: `  video-production-cli listen --join 3
   video-production-cli listen --try 312.48 315.12
+  video-production-cli listen --try 312.48 315.12 --apply --reason "фальстарт"
   video-production-cli listen --range 1219 1225`,
 		RunE: func(cmd *cobra.Command, args []string) error {
+			if apply && try == "" {
+				return errors.New("--apply saves a tried cut: listen --try FROM TO --apply --reason R")
+			}
 			if try != "" {
 				e, rest, err := loadEdit(cmd, args)
 				if err != nil {
@@ -354,6 +360,9 @@ MP3 includes gapless timing metadata. Players that ignore it add about 69 ms; se
 				}
 				if err := noExtraArgs(rest); err != nil {
 					return err
+				}
+				if apply {
+					return emit(cmd, func(w io.Writer) (EntryResult, error) { return saveCut(w, e, from, to, reason) })
 				}
 				return emit(cmd, func(w io.Writer) (render.ListenResult, error) {
 					return render.ListenTry(w, e, from, to, span, video)
@@ -396,6 +405,8 @@ MP3 includes gapless timing metadata. Players that ignore it add about 69 ms; se
 	fileFlag(cmd)
 	cmd.Flags().Float64Var(&span, "span", 3.0, "seconds of context on each side (--join, --try)")
 	cmd.Flags().BoolVar(&video, "video", false, "write a 540p mp4 with picture instead of mp3")
+	cmd.Flags().BoolVar(&apply, "apply", false, "with --try: save the cut you have listened to (needs --reason)")
+	cmd.Flags().StringVar(&reason, "reason", "", "with --try --apply: why it is cut, in the language of the video")
 	cmd.MarkFlagsMutuallyExclusive("join", "try", "range")
 	cmd.MarkFlagsMutuallyExclusive("file", "join")
 	cmd.MarkFlagsMutuallyExclusive("file", "try")

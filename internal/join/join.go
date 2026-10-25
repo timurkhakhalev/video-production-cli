@@ -401,6 +401,9 @@ func Init(w io.Writer, opt Options) (string, error) {
 	fmt.Fprintln(w, "encode.json: "+encodePath)
 	fmt.Fprintf(w, "duration %s, %d chunk(s) at nominal %d min; refine boundaries with suggest-chunks\n",
 		pyfmt.TC(duration), len(chunks), int64(minutes))
+	if len(opt.Keep) == 0 && duration >= 15*60 {
+		fmt.Fprintln(w, "for a short or excerpt of this recording use keep mode instead of cutting the rest: init SRC --keep FROM-TO [--keep ...]")
+	}
 	for i, p := range parts {
 		o := p.(*jsonx.Object)
 		start := ffmpeg.Float(ffmpeg.Get(o, "start"))

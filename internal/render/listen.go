@@ -112,7 +112,7 @@ func ListenTry(w io.Writer, e *edit.Edit, from, to, span float64, video bool) (L
 	} else {
 		fmt.Fprintln(w, "  the cut reaches the end of the source: the clip ends where it starts")
 	}
-	fmt.Fprintf(w, "  if it sounds clean, add {\"from\": %.3f, \"to\": %.3f, \"reason\": \"...\"} to cuts\n", from, to)
+	fmt.Fprintf(w, "  open the clip and listen to it; if it sounds clean, save it: listen --try %.3f %.3f --apply --reason \"...\"\n", from, to)
 	return ListenResult{File: out, EncoderDelay: delay, JoinAt: joinAt, SrcOut: a, SrcIn: b}, nil
 }
 

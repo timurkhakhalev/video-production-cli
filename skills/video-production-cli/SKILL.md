@@ -24,6 +24,8 @@ Read sections when their task applies:
 Run `video-production-cli doctor` to check dependencies, and `--help` on a command
 for its exact syntax. Resume from `edit.json` and `status`.
 
-Use the CLI for inspection and rendering. Do not improvise ffmpeg commands,
-change encode.json, add effects, or mark edits approved without the user's review.
+Use the CLI for inspection, edits and rendering: change edit.json with its commands
+(`mode`, `cuts add`, `listen --try --apply`), not by rewriting the file. Open the clips
+`listen` writes and hear them. For transcripts use `kesha`, never whisper. Do not improvise
+ffmpeg commands, change encode.json, add effects, or mark edits approved without the user's review.
 If the CLI cannot do what is needed, report the missing capability.

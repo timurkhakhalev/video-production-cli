@@ -129,6 +129,9 @@ func Status(w io.Writer, e *edit.Edit) (StatusResult, error) {
 	if res.Warnings > 0 {
 		fmt.Fprintf(w, "WARNING: %d kept fragment(s) shorter than %.1fs (see joins)\n", res.Warnings, edit.MinKeep)
 	}
+	if res.Keep == 0 && res.OutputLen < 0.3*srcLen && srcLen >= 15*60 {
+		fmt.Fprintf(w, "WARNING: output is %.0f%% of the source; for a short or excerpt use keep mode (init --keep) instead of cutting the rest\n", 100*res.OutputLen/srcLen)
+	}
 	fmt.Fprintf(w, "notes:   %d review flag(s), %d lesson(s)\n", res.ReviewFlags, res.Lessons)
 	if res.Final != "" {
 		state := "not verified"
@@ -143,7 +146,7 @@ func Status(w io.Writer, e *edit.Edit) (StatusResult, error) {
 
 func nextStep(r StatusResult) string {
 	if r.Mode == "" {
-		return `ask the user for the mode (step: review each chunk; full: one review at the end) and set "mode" in edit.json`
+		return `ask the user for the mode (step: review each chunk; full: one review at the end) and run ` + "`mode step` or `mode full`"
 	}
 	var draft, review []string
 	for _, c := range r.Chunks {

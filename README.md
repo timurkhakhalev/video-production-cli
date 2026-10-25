@@ -13,8 +13,9 @@ cd /path/to/video-edit
 /path/to/video-production-cli/bin/video-production-cli status
 ```
 
-Set the review mode in edit.json, inspect source ranges with `proxy`, locate silent cut points
-with `audio`, and check cuts with `frames` and `listen`. Preview for user review before marking
+Set the review mode with `mode`, inspect source ranges with `proxy`, locate silent cut points
+with `audio`, try cuts with `listen --try` and save them with `--apply` or `cuts add`, and
+check every join with `frames` and `listen`. Preview for user review before marking
 chunks approved; `final` renders from source and verifies the result. MP3 listening clips are
 mono 16 kHz at 40 kbps, with encoder-delay metadata and a warning for decoders that ignore it.
 

@@ -15,11 +15,34 @@ Do not add transitions, crossfades, audio overlap, J/L cuts, zooms, loudness pro
 denoising, color changes, scaling, fps changes or speed ramps. Do not run ad-hoc ffmpeg
 commands, install transcription tools, edit encode.json, or work around CLI failures.
 Use native video/audio understanding. If the CLI cannot do the task, explain the missing feature.
+Do only what was asked: a cutting task ends at the verified edit. Subtitles, design markup,
+briefs or status tables are separate tasks; do them only on request.
+
+## Listening and transcripts
+
+Listening means opening the clip that `listen` wrote (MP3) with your file-reading tool and
+hearing it. An envelope, a pause list or a transcript is not a substitute: they cannot tell a
+clipped word, a cut breath or a wrong intonation. Open every `listen --try` and `listen --join`
+clip you rely on. Use `--video` only when you need the picture too, and then open that file.
+
+For the text of what is said use Kesha Voice Kit (`kesha`), never whisper or other speech
+tools: `kesha --json --timestamps clip.mp3` on a `listen --range` clip (up to 300 s).
+Its segments are coarse (several seconds) and in clip time: add the printed offset. Use the
+text to find candidates; take exact edges from `audio`, then listen. Kesha prints to stdout;
+keep any saved transcript inside the work folder, not in the repository.
+
+Subtitles (only on request) are made with Kesha from the audio of the rendered file:
+`listen --range 0 END --file FINAL`, then `kesha` on that MP3 (Kesha does not read MP4). A generated
+subtitle file is a draft: watch and listen to the rendered video against it, read every cue,
+and fix wrong words, names, terms and timings before handing it over.
 
 ## Working files and time
 
 `init` creates `<name>-edit/edit.json` and `encode.json` next to the source. edit.json is the
-single source of truth. Only edit this file; the CLI writes previews, frames and final files.
+single source of truth; the CLI writes previews, frames and final files. Change edit.json through
+commands: `mode`, `cuts add/rm`, `listen --try ... --apply`, `speedups add/rm`, `chunks set`.
+They validate and save atomically. Edit by hand only `lessons` and `review_flags`, as a targeted
+change; never rewrite the whole file.
 All edit.json times are source seconds. Proxy and listening ranges print their source offset.
 Times in a rendered preview belong to that file: convert with `map` before changing source cuts.
 To resume, read edit.json and run `status`; start with the first unapproved chunk and apply `lessons`.
@@ -30,7 +53,7 @@ To resume, read edit.json and run `status`; start with the first unapproved chun
    `init video-1.mp4 video-2.mp4`. Never join them yourself. Init rejects VFR, nonzero stream
    starts and mismatched recording settings. Report failures to the user.
 2. Establish mode from the request, or ask: `step` reviews each chunk; `full` reviews the whole
-   edit once. Set `mode` in edit.json. Do not assume user approval or mark chunks approved yourself.
+   edit once. Run `mode step` or `mode full`. Do not assume approval or approve chunks yourself.
 3. For long videos run `chunks suggest`. Move nominal ten-minute boundaries to complete
    thoughts or slide changes (roughly 7–13 min is fine). Adjacent chunks share a boundary;
    cuts and speed-ups must stay within one chunk. Keep mode instead tiles selected fragments.
@@ -38,9 +61,10 @@ To resume, read edit.json and run `status`; start with the first unapproved chun
    Keep proxy ranges near five minutes. For each candidate inspect 5–10 seconds on each side;
    a silent gap alone does not tell you whether a phrase is a restart.
 5. Find silent edges with `audio FROM TO --at T`; check pose using `frames --range FROM TO`
-   or `frames --at T`. Try the cut without saving it: `listen --try FROM TO`. Then add
-   `{"from": 312.48, "to": 315.12, "reason": "false start"}` to `cuts` in source seconds.
-   Keep the reason in the video's language. Apply every rule in `lessons`.
+   or `frames --at T`. Try the cut without saving it: `listen --try FROM TO`, open the clip
+   and listen. If it is clean, save it: `listen --try FROM TO --apply --reason "..."` (or
+   `cuts add FROM TO --reason "..."`). Keep the reason in the video's language. Remove a
+   wrong cut with `cuts rm N` (numbers from `cuts`). Apply every rule in `lessons`.
 6. Run `joins --chunk N`, then `frames --join K` and `listen --join K` for EVERY join.
    Numbers are global, including in keep mode. Inspect sheets and full-resolution pairs;
    video understanding at one frame per second cannot verify the pose at an exact cut.

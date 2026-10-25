@@ -8,7 +8,8 @@ description: Hand over previews, translate feedback to source times, preserve le
 In step mode render `preview --chunk N`, then `chunks set N in_review`. In full mode use
 `preview` and `chunks set all in_review`. Share a link to the preview, the joins table with
 preview times/reasons, speed-up factors and times, and unresolved `review_flags`. Flags are
-places left uncut because a clean join is impossible; explain them instead of hiding them.
+only places left unresolved, e.g. a cut not made because a clean join is impossible; explain
+them instead of hiding them. Do not put notes about successful joins there.
 
 The user's timestamps are preview times. Convert with `map 1:28.5 --chunk N` for a chunk,
 or `map 1:28.5` for a full preview/final. This handles cuts and muted speed-ups. Do not add

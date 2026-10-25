@@ -4,6 +4,7 @@
 package render
 
 import (
+	"crypto/sha1"
 	"errors"
 	"fmt"
 	"io"
@@ -12,6 +13,7 @@ import (
 	"os"
 	"path/filepath"
 	"sort"
+	"strings"
 
 	"video-production-cli/internal/edit"
 	"video-production-cli/internal/ffmpeg"
@@ -60,7 +62,7 @@ func FileMedia(path, workdir string) (Media, error) {
 	m := Media{Path: abs, Workdir: workdir, What: "file",
 		Duration: ffmpeg.Float(ffmpeg.Get(ffmpeg.GetObj(info, "format"), "duration"))}
 	if workdir == "" {
-		m.Workdir = filepath.Dir(abs)
+		m.Workdir = scratchDir(abs)
 	}
 	m.FPS = big.NewRat(30, 1)
 	if v := ffmpeg.Stream(info, "video"); v != nil {
@@ -69,6 +71,24 @@ func FileMedia(path, workdir string) (Media, error) {
 		}
 	}
 	return m, nil
+}
+
+// scratchDir is where outputs for a file outside any edit go: the work folder the file
+// lives in (previews/, the final), else a per-file folder in the user cache, never next
+// to a shared source.
+func scratchDir(abs string) string {
+	for d, i := filepath.Dir(abs), 0; i < 2; d, i = filepath.Dir(d), i+1 {
+		if _, err := os.Stat(filepath.Join(d, "edit.json")); err == nil {
+			return d
+		}
+	}
+	base, err := os.UserCacheDir()
+	if err != nil {
+		base = os.TempDir()
+	}
+	sum := sha1.Sum([]byte(abs))
+	name := strings.TrimSuffix(filepath.Base(abs), filepath.Ext(abs))
+	return filepath.Join(base, "video-production-cli", "files", fmt.Sprintf("%s-%x", name, sum[:4]))
 }
 
 func ensureDir(workdir, name string) (string, error) {

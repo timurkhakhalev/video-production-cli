@@ -13,10 +13,16 @@ ffmpeg progress stays on stderr. Use command --help for flags and examples.
 | `status` | Chunks, cuts, speed-ups, output length, notes, existing final verification, next step. Existing reports may be stale after edits; rerender after changes. |
 | `chunks suggest [--every 600 --window 120]` | Longest pauses near nominal chunk marks; does not move boundaries. |
 | `chunks set ID\|all draft\|in_review\|approved` | Validate and atomically save status, preserving unknown fields. |
+| `mode step\|full` | Save the review mode the user chose. |
+| `cuts` | Numbered explicit cuts with the join each creates. |
+| `cuts add FROM TO --reason R` | Validate and save a cut (overlaps, chunk boundaries, keep fragments). |
+| `cuts rm N` | Remove cut N as numbered by `cuts`. |
+| `speedups [add FROM TO --speed N --reason R \| rm N]` | List, add or remove muted speed-ups. |
 | `audio FROM TO [--at T --step 0.02 --noise -32 --min 0.08]` | RMS envelope and pauses, nearest safe point. At most 60 seconds. |
 | `silences FROM TO [--noise -32 --min 0.08]` | Silence intervals in source/file seconds. |
 | `listen --join K [--span 3]` | Exact splice with context; MP3 by default. |
 | `listen --try FROM TO [--span 3]` | Preview an additional non-overlapping cut, without saving. |
+| `listen --try FROM TO --apply --reason R` | Save the tried cut after listening. |
 | `listen --range FROM TO` | Unedited source range, at most 300 seconds. |
 | `listen ... --video` | MP4 with 540p picture instead of mono 16 kHz 40 kbps MP3. |
 | `frames --join K [--span 0.5]` | Before/after contact sheet plus full-resolution last/first pair. |
@@ -36,6 +42,8 @@ ffmpeg progress stays on stderr. Use command --help for flags and examples.
 
 `audio`, `silences`, `frames` and `listen --range` accept `--file PATH` to inspect a rendered
 file without edit.json. Times then belong to that file. Join and try require edit.json.
+Outputs for a file inside a work folder go to that folder; for any other file (e.g. the source
+before init) they go to a per-file folder in the user cache, never next to the source.
 MP3 gapless metadata preserves clip times; decoders ignoring it add about 69 ms.
 
 Final uses libx264 slow CRF 15 and source profile, pixel format, level, color tags, track
