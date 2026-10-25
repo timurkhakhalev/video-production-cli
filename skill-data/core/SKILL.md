@@ -26,15 +26,18 @@ clipped word, a cut breath or a wrong intonation. Open every `listen --try` and 
 clip you rely on. Use `--video` only when you need the picture too, and then open that file.
 
 For the text of what is said use Kesha Voice Kit (`kesha`), never whisper or other speech
-tools: `kesha --json --timestamps clip.mp3` on a `listen --range` clip (up to 300 s).
-Its segments are coarse (several seconds) and in clip time: add the printed offset. Use the
-text to find candidates; take exact edges from `audio`, then listen. Kesha prints to stdout;
-keep any saved transcript inside the work folder, not in the repository.
+tools: `kesha --json --timestamps clip.mp3 > WORK/transcript_FROM_TO.json` on one
+`listen --range` clip covering the whole area you work on (up to 300 s), then read that file
+instead of transcribing again. Each segment has `words` with start/end (0.08 s steps), in clip
+time: add the printed offset. Do not run kesha on second-long clips to find a word; look it up
+in the saved words. Use words to find candidates; take exact edges from `audio`, then listen.
+Keep transcripts inside the work folder, not in the repository. If `kesha` fails, report it to
+the user instead of searching for words by ear with many short clips.
 
-Subtitles (only on request) are made with Kesha from the audio of the rendered file:
-`listen --range 0 END --file FINAL`, then `kesha` on that MP3 (Kesha does not read MP4). A generated
-subtitle file is a draft: watch and listen to the rendered video against it, read every cue,
-and fix wrong words, names, terms and timings before handing it over.
+Subtitles (only on request) are made with Kesha from the rendered file: `kesha --json
+--timestamps FINAL.mp4` gives word times on the video's own clock. A generated subtitle file
+is a draft: watch and listen to the rendered video against it, read every cue, and fix wrong
+words, names, terms and timings before handing it over.
 
 ## Working files and time
 

@@ -11,7 +11,7 @@ Use `--step` to change envelope cells, `--noise -32` for the silence threshold a
 `--min 0.08` for the shortest pause. Audio ranges are limited to 60 seconds.
 `silences FROM TO` is a longer-range ffmpeg silence scan; both commands accept `--file PATH`
 for preview/final times. These measurements identify silence, not words or semantic mistakes. For words use `kesha`
-on a `listen --range` clip (see core); its segment times are coarse, so edges still come from here.
+on a `listen --range` clip (see core); its word times are 0.08 s steps, so exact edges still come from here.
 
 A safe cut starts 80–120 ms after the previous sound and ends 100–150 ms before the next
 onset. The output uses 100/120 ms margins. A suggested point is the middle of that safe
