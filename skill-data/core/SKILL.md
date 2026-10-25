@@ -52,6 +52,13 @@ To resume, read edit.json and run `status`; start with the first unapproved chun
 1. Run `doctor`, then `init /path/video.mp4`. Pass recording parts in order to join losslessly:
    `init video-1.mp4 video-2.mp4`. Never join them yourself. Init rejects VFR, nonzero stream
    starts and mismatched recording settings. Report failures to the user.
+   If the result is a short or excerpt (most of the source is dropped), use keep mode:
+   `init video.mp4 --workdir short-edit --keep FROM TO [--keep FROM TO ...]`. Keep lists the
+   parts that stay; everything else is cut implicitly. Chunks then cover only the kept
+   fragments, so you watch, check and review just those minutes instead of the whole source,
+   and joins between fragments are numbered and checked like any cut. Without keep you would
+   chunk the whole talk and cut most of it with "outside the short" cuts, which wastes time
+   and hides real joins among huge cuts. Do this even if earlier edits of the same source did not.
 2. Establish mode from the request, or ask: `step` reviews each chunk; `full` reviews the whole
    edit once. Run `mode step` or `mode full`. Do not assume approval or approve chunks yourself.
 3. For long videos run `chunks suggest`. Move nominal ten-minute boundaries to complete
