@@ -143,13 +143,13 @@ func TestE2E(t *testing.T) {
 	}
 
 	// the edit folder can be found from the source folder
-	wd, _ := os.Getwd()
-	os.Chdir(dir)
-	out = mustCLI(t, "preview", "--chunk", "1")
-	os.Chdir(wd)
-	if !strings.Contains(out, "verify: OK") {
-		t.Fatalf("preview chunk 1:\n%s", out)
-	}
+	t.Run("preview from source folder", func(t *testing.T) {
+		t.Chdir(dir)
+		out := mustCLI(t, "preview", "--chunk", "1")
+		if !strings.Contains(out, "verify: OK") {
+			t.Fatalf("preview chunk 1:\n%s", out)
+		}
+	})
 	if out := mustCLI(t, "preview", "--chunk", "2", "--edit", editPath); !strings.Contains(out, "verify: OK") {
 		t.Fatalf("preview chunk 2:\n%s", out)
 	}

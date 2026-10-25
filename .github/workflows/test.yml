@@ -8,7 +8,12 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
-      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Set up FFmpeg 7 (minimum supported version)
+        uses: FedericoCarboni/setup-ffmpeg@37062fbf7149fc5578d6c57e08aed62458b375d6 # v3.1
+        with:
+          ffmpeg-version: '7.0.2'
+      - name: Check runtime dependencies
+        run: go run ./cmd/video-production-cli doctor
       - run: go vet ./...
       - run: go test ./...
       - run: go test -tags e2e -count=1 ./...
