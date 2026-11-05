@@ -165,4 +165,3 @@ make vet
 ```
 
 All test fixtures are synthetic. `python3 testdata/generate_fixtures.py` recreates the video fixtures; `make golden` regenerates reference outputs with Python 3.9+ (a test-only dependency).
-
